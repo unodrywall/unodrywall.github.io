@@ -4,286 +4,281 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Uno Drywall Ltd — Professional Drywall Contractors | GTA</title>
-<meta name="description" content="Uno Drywall Ltd — Professional drywall installation, taping, finishing, steel framing & interior systems across the Greater Toronto Area. Licensed & Insured. Free Estimates.">
+<meta name="description" content="Uno Drywall Ltd — Professional drywall installation, taping, finishing, steel framing & interior systems across the Greater Toronto Area. Licensed & Insured. Free Estimates. Call (647) 768-0850.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
-<!-- Local Business Schema -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  "name": "Uno Drywall Ltd",
-  "description": "Professional drywall installation, taping, finishing, steel framing & interior systems across the Greater Toronto Area.",
-  "url": "https://unodrywall.ca",
-  "telephone": "+16477680850",
-  "email": "info@unodrywall.ca",
-  "address": {"@type": "PostalAddress", "streetAddress": "2121 Lakeshore Blvd W", "addressLocality": "Etobicoke", "addressRegion": "ON", "postalCode": "M8V 4E9", "addressCountry": "CA"},
-  "areaServed": ["Toronto", "Etobicoke", "Mississauga", "Brampton", "Vaughan", "Markham"],
-  "openingHours": ["Mo-Fr 07:00-18:00", "Sa 08:00-14:00"],
-  "aggregateRating": {"@type": "AggregateRating", "ratingValue": "4.9", "reviewCount": "47"}
-}
-</script>
-
-<!-- FAQ Schema -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {"@type": "Question", "name": "How much does drywall installation cost per square foot in Toronto?", "acceptedAnswer": {"@type": "Answer", "text": "Drywall installation in the GTA typically ranges from $2.50 to $5.00 per square foot depending on the project scope, ceiling height, and finish level. Contact us for a free, detailed estimate tailored to your project."}},
-    {"@type": "Question", "name": "How long does a drywall project take?", "acceptedAnswer": {"@type": "Answer", "text": "A typical residential room takes 2-3 days for boarding and finishing. Larger commercial projects are scoped individually. We always provide a clear timeline before work begins."}},
-    {"@type": "Question", "name": "Do you handle both commercial and residential projects?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. We serve residential homeowners, general contractors, and commercial developers across the Greater Toronto Area."}},
-    {"@type": "Question", "name": "Are you licensed and insured?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Uno Drywall Ltd is fully licensed and carries comprehensive liability insurance and WSIB coverage for complete project protection."}}
-  ]
-}
-</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"LocalBusiness","name":"Uno Drywall Ltd","description":"Professional drywall installation, taping, finishing, steel framing & interior systems across the GTA.","url":"https://unodrywall.ca","telephone":"+16477680850","email":"info@unodrywall.ca","address":{"@type":"PostalAddress","streetAddress":"2121 Lakeshore Blvd W","addressLocality":"Etobicoke","addressRegion":"ON","postalCode":"M8V 4E9","addressCountry":"CA"},"areaServed":["Toronto","Etobicoke","Mississauga","Brampton","Vaughan","Markham"],"openingHours":["Mo-Fr 07:00-18:00","Sa 08:00-14:00"]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How much does drywall installation cost in Toronto?","acceptedAnswer":{"@type":"Answer","text":"Drywall installation in the GTA ranges from $2.50 to $5.00 per square foot depending on scope, ceiling height, and finish level. Contact us for a free estimate."}},{"@type":"Question","name":"How long does a drywall project take?","acceptedAnswer":{"@type":"Answer","text":"A typical residential room takes 2-3 days. Larger commercial projects are scoped individually. We provide a clear timeline before work begins."}},{"@type":"Question","name":"Are you licensed and insured?","acceptedAnswer":{"@type":"Answer","text":"Yes. Uno Drywall Ltd is fully licensed with comprehensive liability insurance and WSIB coverage."}},{"@type":"Question","name":"What areas do you serve?","acceptedAnswer":{"@type":"Answer","text":"We serve the entire GTA including Toronto, Etobicoke, Mississauga, Brampton, Vaughan, Markham, and surrounding areas."}}]}</script>
 
 <style>
 :root {
-  --bg: #1A1A1A;
-  --bg-deep: #111111;
-  --bg-card: #222222;
-  --bg-elevated: #282828;
-  --text: #E8E8E8;
-  --text-bright: #FFFFFF;
-  --text-secondary: #999999;
-  --text-muted: #5A5A5A;
-  --accent: #E8A020;
-  --accent-hover: #D4920A;
-  --accent-dim: rgba(232,160,32,0.12);
+  --bg: #0E0E0E;
+  --bg-sec: #141414;
+  --bg-card: #1A1A1A;
+  --bg-elevated: #222;
+  --text: #D4D4D4;
+  --text-bright: #F5F5F5;
+  --text-muted: #666;
+  --accent: #D4920A;
+  --accent-light: #E8A020;
   --border: rgba(255,255,255,0.06);
-  --border-light: rgba(255,255,255,0.1);
-  --font: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-  --max-w: 1240px;
-  --transition: 0.4s cubic-bezier(0.25, 0.1, 0.25, 1);
+  --heading: 'Outfit', sans-serif;
+  --body: 'Inter', -apple-system, sans-serif;
+  --max-w: 1200px;
+  --ease: cubic-bezier(0.25, 0.1, 0.25, 1);
 }
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-font-smoothing:antialiased}
+body{font-family:var(--body);background:var(--bg);color:var(--text);line-height:1.7;overflow-x:hidden}
+::selection{background:var(--accent);color:#000}
+img{max-width:100%;display:block}
+.w{max-width:var(--max-w);margin:0 auto;padding:0 48px}
 
-* { margin: 0; padding: 0; box-sizing: border-box; }
-html { scroll-behavior: smooth; -webkit-font-smoothing: antialiased; }
-body { font-family: var(--font); background: var(--bg); color: var(--text-secondary); line-height: 1.7; overflow-x: hidden; }
-::selection { background: var(--accent); color: var(--bg); }
-.wrap { max-width: var(--max-w); margin: 0 auto; padding: 0 60px; }
-img { max-width: 100%; }
+/* Animations */
+.reveal{opacity:0;transform:translateY(30px);transition:opacity 0.8s var(--ease),transform 0.8s var(--ease)}
+.reveal.visible{opacity:1;transform:translateY(0)}
 
-/* ── NAV ────────────────────────────────────── */
-nav { position: fixed; top: 0; left: 0; right: 0; z-index: 1000; background: rgba(17,17,17,0.92); backdrop-filter: blur(24px); -webkit-backdrop-filter: blur(24px); border-bottom: 1px solid var(--border); }
-.nav-inner { max-width: var(--max-w); margin: 0 auto; display: flex; align-items: center; justify-content: space-between; padding: 16px 60px; }
-.nav-logo img { height: 30px; filter: brightness(0) invert(1); }
-.nav-links { display: flex; align-items: center; gap: 32px; list-style: none; }
-.nav-links a { text-decoration: none; color: var(--text-secondary); font-size: 13px; font-weight: 500; letter-spacing: 0.3px; transition: var(--transition); }
-.nav-links a:hover { color: var(--text-bright); }
-.nav-phone { color: var(--text-bright) !important; font-weight: 700 !important; font-size: 14px !important; letter-spacing: 0.5px; }
-.nav-cta { color: var(--bg-deep) !important; background: var(--accent); padding: 9px 22px; font-size: 11px !important; font-weight: 700 !important; letter-spacing: 1.5px; text-transform: uppercase; transition: var(--transition); border-radius: 2px; }
-.nav-cta:hover { background: var(--accent-hover); }
-.hamburger { display: none; background: none; border: none; cursor: pointer; padding: 8px; }
-.hamburger span { display: block; width: 22px; height: 1.5px; background: var(--text); margin: 5px 0; }
+/* ── NAV ─────────────────────── */
+nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(14,14,14,0.85);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-bottom:1px solid var(--border);transition:0.3s}
+.nav-i{max-width:var(--max-w);margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:16px 48px}
+.nav-logo img{height:28px;filter:brightness(0) invert(1)}
+.nav-r{display:flex;align-items:center;gap:28px}
+.nav-links{display:flex;gap:28px;list-style:none}
+.nav-links a{text-decoration:none;color:var(--text-muted);font-size:13px;font-weight:500;transition:0.3s}
+.nav-links a:hover{color:var(--text-bright)}
+.nav-phone{color:var(--text-bright);text-decoration:none;font-size:14px;font-weight:700;letter-spacing:0.3px;transition:0.3s}
+.nav-phone:hover{color:var(--accent)}
+.nav-cta{background:var(--accent);color:#000;padding:10px 20px;font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;text-decoration:none;transition:0.3s}
+.nav-cta:hover{background:var(--accent-light)}
+.ham{display:none;background:none;border:none;cursor:pointer;padding:8px}
+.ham span{display:block;width:20px;height:1.5px;background:#fff;margin:4px 0}
 
-/* ── HERO ────────────────────────────────────── */
-.hero { min-height: 100vh; display: flex; align-items: center; position: relative; overflow: hidden; }
-.hero-bg { position: absolute; inset: 0; background: url('hero-bg.jpg') center/cover no-repeat; filter: grayscale(100%) brightness(0.3); }
-.hero-content { position: relative; z-index: 1; max-width: var(--max-w); margin: 0 auto; padding: 140px 60px 100px; width: 100%; }
-.hero-text { max-width: 680px; }
-.hero-accent { width: 40px; height: 2px; background: var(--accent); margin-bottom: 28px; }
-.hero-text h1 { font-size: clamp(2.4rem, 4.5vw, 3.4rem); color: var(--text-bright); line-height: 1.12; font-weight: 700; letter-spacing: -0.5px; margin-bottom: 20px; }
-.hero-text h1 span { color: var(--accent); }
-.hero-subtitle { font-size: 16px; color: var(--text-secondary); margin-bottom: 40px; max-width: 500px; line-height: 1.8; }
-.hero-buttons { display: flex; gap: 14px; align-items: center; margin-bottom: 40px; }
-.btn-accent { display: inline-flex; align-items: center; gap: 8px; padding: 15px 32px; background: var(--accent); border: 1px solid var(--accent); color: var(--bg-deep); font-size: 12px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; text-decoration: none; transition: var(--transition); }
-.btn-accent:hover { background: var(--accent-hover); }
-.btn-outline { display: inline-flex; align-items: center; gap: 8px; padding: 15px 32px; border: 1px solid rgba(255,255,255,0.2); color: var(--text); font-size: 12px; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; text-decoration: none; transition: var(--transition); background: transparent; }
-.btn-outline:hover { background: var(--text-bright); color: var(--bg-deep); border-color: var(--text-bright); }
-.hero-micro-review { display: flex; align-items: center; gap: 12px; }
-.hero-micro-stars { color: var(--accent); font-size: 14px; letter-spacing: 2px; }
-.hero-micro-text { font-size: 13px; color: var(--text-muted); }
-.hero-micro-text strong { color: var(--text-secondary); }
+/* ── HERO ─────────────────────── */
+.hero{min-height:100vh;display:grid;grid-template-columns:1fr 1fr;position:relative;overflow:hidden}
+.hero-left{display:flex;flex-direction:column;justify-content:center;padding:140px 0 80px 0;position:relative;z-index:2}
+.hero-left .w-left{max-width:600px;padding-left:max(48px, calc((100vw - var(--max-w))/2 + 48px))}
+.hero-tag{display:inline-flex;align-items:center;gap:8px;background:var(--border);border:1px solid rgba(255,255,255,0.08);padding:6px 14px;border-radius:100px;font-size:11px;font-weight:600;color:var(--text-muted);letter-spacing:1px;text-transform:uppercase;margin-bottom:28px;width:fit-content}
+.hero-tag .dot{width:6px;height:6px;border-radius:50%;background:var(--accent);animation:pulse 2s infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:0.4}}
+.hero h1{font-family:var(--heading);font-size:clamp(2.6rem,4.5vw,3.8rem);color:var(--text-bright);line-height:1.08;font-weight:800;letter-spacing:-1px;margin-bottom:20px}
+.hero h1 em{color:var(--accent);font-style:normal}
+.hero-sub{font-size:16px;color:var(--text);margin-bottom:36px;max-width:440px;line-height:1.8}
+.hero-actions{display:flex;gap:12px;margin-bottom:40px;flex-wrap:wrap}
+.btn-primary{display:inline-flex;align-items:center;gap:8px;padding:16px 28px;background:var(--accent);color:#000;font-size:13px;font-weight:700;letter-spacing:0.5px;text-decoration:none;transition:0.3s}
+.btn-primary:hover{background:var(--accent-light);transform:translateY(-2px);box-shadow:0 8px 24px rgba(212,146,10,0.25)}
+.btn-ghost{display:inline-flex;align-items:center;gap:8px;padding:16px 28px;border:1px solid rgba(255,255,255,0.15);color:var(--text-bright);font-size:13px;font-weight:600;text-decoration:none;transition:0.3s;background:transparent}
+.btn-ghost:hover{border-color:#fff;background:rgba(255,255,255,0.05)}
+.hero-proof{display:flex;align-items:center;gap:16px}
+.hero-proof-stars{color:var(--accent);font-size:13px;letter-spacing:2px}
+.hero-proof-text{font-size:12px;color:var(--text-muted);line-height:1.4}
+.hero-proof-text b{color:var(--text)}
 
-.hero-scroll { position: absolute; bottom: 32px; left: 50%; transform: translateX(-50%); z-index: 1; display: flex; flex-direction: column; align-items: center; gap: 6px; }
-.hero-scroll span { font-size: 9px; letter-spacing: 3px; text-transform: uppercase; color: var(--text-muted); }
-.scroll-line { width: 1px; height: 36px; background: linear-gradient(to bottom, var(--text-muted), transparent); animation: scroll-pulse 2s ease-in-out infinite; }
-@keyframes scroll-pulse { 0%, 100% { opacity: 0.3; } 50% { opacity: 1; } }
+.hero-right{position:relative;overflow:hidden}
+.hero-right img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:grayscale(80%) brightness(0.5)}
+.hero-right::after{content:'';position:absolute;inset:0;background:linear-gradient(90deg,var(--bg) 0%,rgba(14,14,14,0.3) 40%,transparent 100%)}
 
-/* ── TRUST BAR ────────────────────────────────── */
-.trust-bar { background: var(--bg-deep); border-bottom: 1px solid var(--border); padding: 24px 0; }
-.trust-items { display: flex; justify-content: center; align-items: center; gap: 48px; flex-wrap: wrap; }
-.trust-item { display: flex; align-items: center; gap: 10px; font-size: 13px; font-weight: 600; color: var(--text-secondary); letter-spacing: 0.3px; }
-.trust-item .num { font-size: 20px; font-weight: 800; color: var(--accent); }
-.trust-divider { width: 1px; height: 24px; background: var(--border-light); }
+/* ── TRUST BAR ────────────────── */
+.trust{background:var(--bg-sec);border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:28px 0;overflow:hidden}
+.trust-track{display:flex;gap:48px;align-items:center;justify-content:center;flex-wrap:wrap}
+.trust-item{display:flex;align-items:center;gap:10px;white-space:nowrap}
+.trust-item .n{font-family:var(--heading);font-size:22px;font-weight:800;color:var(--accent)}
+.trust-item .t{font-size:13px;font-weight:500;color:var(--text-muted)}
+.trust-sep{width:1px;height:20px;background:rgba(255,255,255,0.08)}
 
-/* ── SECTIONS ────────────────────────────────── */
-section { padding: 110px 0; }
-.section-label { font-size: 11px; font-weight: 700; letter-spacing: 3px; text-transform: uppercase; color: var(--accent); margin-bottom: 16px; display: flex; align-items: center; gap: 14px; }
-.section-label::before { content: ''; width: 24px; height: 1px; background: var(--accent); }
-.section-title { font-size: clamp(1.8rem, 3vw, 2.4rem); color: var(--text-bright); line-height: 1.2; font-weight: 700; letter-spacing: -0.3px; margin-bottom: 16px; }
-.section-desc { font-size: 15px; color: var(--text-secondary); line-height: 1.8; max-width: 500px; }
+/* ── ABOUT ────────────────────── */
+#about{padding:120px 0;background:var(--bg)}
+.about-g{display:grid;grid-template-columns:0.9fr 1.1fr;gap:72px;align-items:center}
+.about-img{position:relative;overflow:hidden;aspect-ratio:4/5}
+.about-img img{width:100%;height:100%;object-fit:cover;filter:grayscale(90%) brightness(0.7);transition:0.6s var(--ease)}
+.about-img:hover img{filter:grayscale(60%) brightness(0.8)}
+.about-badge{position:absolute;bottom:0;left:0;background:var(--accent);padding:20px 24px;display:flex;gap:10px;align-items:center}
+.about-badge .ab-n{font-family:var(--heading);font-size:2.2rem;font-weight:800;color:#000;line-height:1}
+.about-badge .ab-t{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:#000;line-height:1.3}
+.tag{font-size:11px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--accent);margin-bottom:16px;display:block}
+.about-title{font-family:var(--heading);font-size:clamp(1.6rem,2.5vw,2.2rem);color:var(--text-bright);font-weight:700;line-height:1.15;margin-bottom:20px}
+.about-text p{font-size:15px;color:var(--text);line-height:1.85;margin-bottom:14px}
+.about-feats{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:28px}
+.about-feat{display:flex;align-items:center;gap:10px;font-size:13px;font-weight:600;color:var(--text-bright)}
+.about-feat::before{content:'';width:20px;height:1.5px;background:var(--accent);flex-shrink:0}
 
-/* ── ABOUT ────────────────────────────────────── */
-#about { background: var(--bg); }
-.about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 72px; align-items: center; }
-.about-image { position: relative; overflow: hidden; }
-.about-image img { width: 100%; height: 480px; object-fit: cover; filter: grayscale(100%) brightness(0.75); transition: var(--transition); }
-.about-image:hover img { filter: grayscale(70%) brightness(0.85); }
-.about-badge { position: absolute; bottom: 0; left: 0; background: var(--accent); padding: 20px 24px; display: flex; align-items: center; gap: 12px; }
-.about-badge .num { font-size: 2.2rem; font-weight: 800; color: var(--bg-deep); line-height: 1; }
-.about-badge .txt { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; line-height: 1.3; color: var(--bg-deep); }
-.about-text p { font-size: 15px; color: var(--text-secondary); line-height: 1.8; margin-bottom: 14px; }
-.about-features { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 32px; }
-.about-feature { display: flex; align-items: center; gap: 12px; font-size: 13px; font-weight: 600; color: var(--text); }
-.about-feature::before { content: ''; width: 20px; height: 1px; background: var(--accent); flex-shrink: 0; }
+/* ── SERVICES ─────────────────── */
+#services{padding:120px 0;background:var(--bg-sec)}
+.svc-top{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:56px;gap:40px}
+.svc-top .desc{font-size:15px;color:var(--text-muted);max-width:400px;text-align:right;line-height:1.7}
+.svc-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--border)}
+.svc{background:var(--bg-sec);padding:36px 24px;transition:0.4s var(--ease);position:relative;overflow:hidden}
+.svc::after{content:'';position:absolute;bottom:0;left:0;width:0;height:2px;background:var(--accent);transition:0.4s var(--ease)}
+.svc:hover{background:var(--bg-card)}
+.svc:hover::after{width:100%}
+.svc-num{font-family:var(--heading);font-size:32px;font-weight:800;color:rgba(255,255,255,0.04);margin-bottom:16px;line-height:1}
+.svc h3{font-size:15px;font-weight:700;color:var(--text-bright);margin-bottom:8px}
+.svc p{font-size:13px;color:var(--text-muted);line-height:1.7}
 
-/* ── SERVICES ────────────────────────────────── */
-#services { background: var(--bg-deep); }
-.services-header { display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 56px; }
-.services-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: var(--border); }
-.service-card { background: var(--bg-deep); padding: 36px 24px; transition: var(--transition); position: relative; }
-.service-card::before { content: ''; position: absolute; top: 0; left: 0; width: 2px; height: 0; background: var(--accent); transition: var(--transition); }
-.service-card:hover { background: var(--bg-card); }
-.service-card:hover::before { height: 100%; }
-.service-icon { width: 44px; height: 44px; margin-bottom: 20px; display: flex; align-items: center; justify-content: center; }
-.service-icon svg { width: 36px; height: 36px; stroke: var(--text); fill: none; stroke-width: 1.2; stroke-linecap: round; stroke-linejoin: round; }
-.service-card h3 { font-size: 14px; color: var(--text-bright); margin-bottom: 8px; font-weight: 700; }
-.service-card p { font-size: 13px; color: var(--text-muted); line-height: 1.7; }
+/* ── FULL-WIDTH IMAGE BREAK ───── */
+.img-break{height:50vh;position:relative;overflow:hidden}
+.img-break img{width:100%;height:100%;object-fit:cover;filter:grayscale(100%) brightness(0.4)}
+.img-break-content{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;text-align:center;flex-direction:column;gap:16px;padding:40px}
+.img-break h2{font-family:var(--heading);font-size:clamp(1.6rem,3vw,2.4rem);color:var(--text-bright);font-weight:700;max-width:600px}
+.img-break p{color:var(--text-muted);font-size:14px}
 
-/* ── PROCESS ─────────────────────────────────── */
-#process { background: var(--bg); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
-.process-header { text-align: center; max-width: 560px; margin: 0 auto 64px; }
-.process-header .section-label { justify-content: center; }
-.process-header .section-label::before { display: none; }
-.process-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 32px; position: relative; }
-.process-grid::before { content: ''; position: absolute; top: 32px; left: 12.5%; right: 12.5%; height: 1px; background: var(--border-light); }
-.process-step { text-align: center; position: relative; }
-.process-num { width: 64px; height: 64px; border-radius: 50%; border: 1px solid var(--border-light); background: var(--bg); display: flex; align-items: center; justify-content: center; margin: 0 auto 20px; font-size: 18px; font-weight: 800; color: var(--accent); position: relative; z-index: 1; transition: var(--transition); }
-.process-step:hover .process-num { background: var(--accent); color: var(--bg-deep); border-color: var(--accent); }
-.process-step h3 { font-size: 14px; font-weight: 700; color: var(--text-bright); margin-bottom: 8px; }
-.process-step p { font-size: 13px; color: var(--text-muted); line-height: 1.7; }
+/* ── PROCESS ──────────────────── */
+#process{padding:120px 0;background:var(--bg)}
+.proc-header{text-align:center;max-width:500px;margin:0 auto 64px}
+.proc-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:40px;position:relative}
+.proc-grid::before{content:'';position:absolute;top:36px;left:10%;right:10%;height:1px;background:var(--border)}
+.proc{text-align:center;position:relative}
+.proc-n{width:72px;height:72px;border-radius:50%;border:1px solid var(--border);background:var(--bg);display:flex;align-items:center;justify-content:center;margin:0 auto 20px;font-family:var(--heading);font-size:22px;font-weight:800;color:var(--accent);position:relative;z-index:1;transition:0.3s}
+.proc:hover .proc-n{background:var(--accent);color:#000;border-color:var(--accent)}
+.proc h3{font-size:14px;font-weight:700;color:var(--text-bright);margin-bottom:6px}
+.proc p{font-size:13px;color:var(--text-muted);line-height:1.7;max-width:200px;margin:0 auto}
 
-/* ── WHY US ──────────────────────────────────── */
-#why-us { background: var(--bg-deep); }
-.why-header { text-align: center; max-width: 560px; margin: 0 auto 64px; }
-.why-header .section-label { justify-content: center; }
-.why-header .section-label::before { display: none; }
-.why-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: var(--border); }
-.why-card { background: var(--bg-deep); padding: 36px 24px; transition: var(--transition); position: relative; }
-.why-card::before { content: ''; position: absolute; top: 0; left: 24px; width: 24px; height: 2px; background: var(--accent); transition: var(--transition); }
-.why-card:hover { background: var(--bg-card); }
-.why-card:hover::before { width: 40px; }
-.why-num { font-size: 11px; font-weight: 800; color: var(--text-muted); letter-spacing: 1px; margin-bottom: 16px; margin-top: 14px; }
-.why-card h3 { font-size: 14px; font-weight: 700; margin-bottom: 8px; color: var(--text-bright); }
-.why-card p { font-size: 13px; color: var(--text-muted); line-height: 1.7; }
+/* ── WHY US (condensed to 4) ──── */
+#why{padding:120px 0;background:var(--bg-sec)}
+.why-g{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:center}
+.why-list{display:flex;flex-direction:column;gap:0}
+.why-item{padding:28px 0;border-bottom:1px solid var(--border);display:grid;grid-template-columns:48px 1fr;gap:16px;align-items:start;transition:0.3s}
+.why-item:first-child{border-top:1px solid var(--border)}
+.why-item:hover{padding-left:8px}
+.why-n{font-family:var(--heading);font-size:14px;font-weight:800;color:var(--accent);padding-top:2px}
+.why-item h3{font-size:15px;font-weight:700;color:var(--text-bright);margin-bottom:4px}
+.why-item p{font-size:13px;color:var(--text-muted);line-height:1.7}
+.why-visual{position:relative;aspect-ratio:3/4;overflow:hidden}
+.why-visual img{width:100%;height:100%;object-fit:cover;filter:grayscale(100%) brightness(0.6)}
+.why-visual::after{content:'';position:absolute;inset:0;background:linear-gradient(to top,var(--bg-sec) 0%,transparent 30%)}
+.why-stat{position:absolute;bottom:24px;left:24px;z-index:1}
+.why-stat .ws-n{font-family:var(--heading);font-size:3.5rem;font-weight:900;color:var(--accent);line-height:1}
+.why-stat .ws-t{font-size:12px;color:var(--text-muted);text-transform:uppercase;letter-spacing:2px;margin-top:4px}
 
-/* ── GALLERY ─────────────────────────────────── */
-#gallery { background: var(--bg); }
-.gallery-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; grid-template-rows: 260px 260px; gap: 4px; margin-top: 48px; }
-.gallery-item { overflow: hidden; position: relative; cursor: pointer; }
-.gallery-item:first-child { grid-row: span 2; }
-.gallery-item img { width: 100%; height: 100%; object-fit: cover; filter: grayscale(100%) brightness(0.65); transition: 0.6s cubic-bezier(0.25,0.1,0.25,1); }
-.gallery-item:hover img { filter: grayscale(50%) brightness(0.8); transform: scale(1.04); }
-.gallery-overlay { position: absolute; inset: 0; background: linear-gradient(to top, rgba(17,17,17,0.85) 0%, transparent 40%); display: flex; align-items: flex-end; padding: 20px; opacity: 0; transition: var(--transition); }
-.gallery-item:hover .gallery-overlay { opacity: 1; }
-.gallery-overlay span { color: var(--text); font-size: 13px; font-weight: 600; }
-.gallery-overlay span::before { content: ''; display: block; width: 20px; height: 1px; background: var(--accent); margin-bottom: 6px; }
+/* ── GALLERY ──────────────────── */
+#gallery{padding:120px 0;background:var(--bg)}
+.gal-grid{display:grid;grid-template-columns:2fr 1fr 1fr;grid-template-rows:280px 280px;gap:4px;margin-top:48px}
+.gal-item{overflow:hidden;position:relative;cursor:pointer}
+.gal-item:first-child{grid-row:span 2}
+.gal-item img{width:100%;height:100%;object-fit:cover;filter:grayscale(100%) brightness(0.6);transition:0.6s var(--ease)}
+.gal-item:hover img{filter:grayscale(40%) brightness(0.75);transform:scale(1.04)}
+.gal-ov{position:absolute;inset:0;background:linear-gradient(to top,rgba(14,14,14,0.9) 0%,transparent 50%);display:flex;flex-direction:column;justify-content:flex-end;padding:24px;opacity:0;transition:0.4s}
+.gal-item:hover .gal-ov{opacity:1}
+.gal-ov .gal-line{width:24px;height:1.5px;background:var(--accent);margin-bottom:8px}
+.gal-ov span{color:var(--text-bright);font-size:13px;font-weight:600}
+.gal-ov small{color:var(--text-muted);font-size:11px;margin-top:4px}
 
-/* ── TESTIMONIALS ────────────────────────────── */
-#testimonials { background: var(--bg-deep); }
-.testimonials-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--border); margin-top: 56px; }
-.testimonial-card { background: var(--bg-deep); padding: 36px 28px; transition: var(--transition); }
-.testimonial-card:hover { background: var(--bg-card); }
-.testimonial-stars { color: var(--accent); font-size: 12px; margin-bottom: 20px; letter-spacing: 4px; }
-.testimonial-text { font-size: 14.5px; color: var(--text-secondary); line-height: 1.85; margin-bottom: 28px; font-style: italic; }
-.testimonial-div { width: 24px; height: 1px; background: var(--border-light); margin-bottom: 16px; }
-.testimonial-name { font-size: 13px; font-weight: 700; color: var(--text-bright); }
-.testimonial-role { font-size: 12px; color: var(--text-muted); margin-top: 3px; }
+/* ── TESTIMONIALS ─────────────── */
+#reviews{padding:120px 0;background:var(--bg-sec)}
+.rev-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--border);margin-top:56px}
+.rev{background:var(--bg-sec);padding:40px 28px;transition:0.3s;position:relative}
+.rev:hover{background:var(--bg-card)}
+.rev::before{content:'"';font-family:var(--heading);font-size:5rem;color:rgba(255,255,255,0.03);position:absolute;top:8px;right:20px;line-height:1}
+.rev-stars{color:var(--accent);font-size:12px;letter-spacing:4px;margin-bottom:20px}
+.rev-text{font-size:14.5px;color:var(--text);line-height:1.85;margin-bottom:28px}
+.rev-div{width:24px;height:1px;background:var(--border);margin-bottom:14px}
+.rev-name{font-size:13px;font-weight:700;color:var(--text-bright)}
+.rev-role{font-size:11px;color:var(--text-muted);margin-top:3px}
 
-/* ── FAQ ─────────────────────────────────────── */
-#faq { background: var(--bg); }
-.faq-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0 48px; margin-top: 56px; }
-.faq-item { border-bottom: 1px solid var(--border); }
-.faq-q { display: flex; justify-content: space-between; align-items: center; padding: 24px 0; cursor: pointer; gap: 16px; }
-.faq-q h3 { font-size: 14.5px; font-weight: 600; color: var(--text); transition: var(--transition); }
-.faq-q:hover h3 { color: var(--accent); }
-.faq-toggle { width: 28px; height: 28px; border-radius: 50%; border: 1px solid var(--border-light); display: flex; align-items: center; justify-content: center; font-size: 16px; color: var(--text-muted); flex-shrink: 0; transition: var(--transition); }
-.faq-item.open .faq-toggle { background: var(--accent); color: var(--bg-deep); border-color: var(--accent); transform: rotate(45deg); }
-.faq-a { max-height: 0; overflow: hidden; transition: max-height 0.4s ease; }
-.faq-a-inner { padding: 0 0 24px; font-size: 14px; color: var(--text-muted); line-height: 1.8; }
+/* ── QUOTE FORM ───────────────── */
+#quote{padding:120px 0;background:var(--bg);position:relative;overflow:hidden}
+.quote-bg{position:absolute;inset:0}
+.quote-bg img{width:100%;height:100%;object-fit:cover;filter:grayscale(100%) brightness(0.2)}
+.quote-content{position:relative;z-index:1;display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:center}
+.quote-left h2{font-family:var(--heading);font-size:clamp(1.8rem,3vw,2.4rem);color:var(--text-bright);font-weight:700;line-height:1.15;margin-bottom:16px}
+.quote-left p{font-size:15px;color:var(--text-muted);line-height:1.8;margin-bottom:24px}
+.quote-left .quote-phone{font-family:var(--heading);font-size:1.6rem;font-weight:700;color:var(--accent);text-decoration:none;transition:0.3s}
+.quote-left .quote-phone:hover{color:var(--accent-light)}
+.quote-form{display:flex;flex-direction:column;gap:14px}
+.quote-form input,.quote-form select,.quote-form textarea{background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.08);color:var(--text-bright);padding:14px 18px;font-family:var(--body);font-size:14px;outline:none;transition:0.3s;width:100%;-webkit-appearance:none}
+.quote-form input:focus,.quote-form select:focus,.quote-form textarea:focus{border-color:var(--accent);background:rgba(255,255,255,0.08)}
+.quote-form input::placeholder,.quote-form textarea::placeholder{color:var(--text-muted)}
+.quote-form select{color:var(--text-muted)}
+.quote-form textarea{resize:vertical;min-height:80px}
+.quote-form .row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.quote-submit{background:var(--accent);color:#000;padding:16px;font-size:12px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;border:none;cursor:pointer;font-family:var(--body);transition:0.3s}
+.quote-submit:hover{background:var(--accent-light)}
 
-/* ── CONTACT ─────────────────────────────────── */
-#contact { background: var(--bg-deep); }
-.contact-grid { display: grid; grid-template-columns: 1fr 1.3fr; gap: 56px; margin-top: 56px; }
-.contact-info { display: flex; flex-direction: column; gap: 28px; }
-.contact-item h4 { font-size: 10px; font-weight: 700; color: var(--text-muted); text-transform: uppercase; letter-spacing: 2px; margin-bottom: 6px; }
-.contact-item p { font-size: 15px; color: var(--text); }
-.contact-item a { color: var(--text); text-decoration: none; transition: var(--transition); }
-.contact-item a:hover { color: var(--accent); }
-.contact-map { overflow: hidden; filter: grayscale(100%) brightness(0.6) contrast(1.1); min-height: 380px; }
-.contact-map iframe { width: 100%; height: 100%; border: 0; }
+/* ── FAQ ──────────────────────── */
+#faq{padding:120px 0;background:var(--bg-sec)}
+.faq-g{display:grid;grid-template-columns:1fr 1fr;gap:0 56px;margin-top:48px}
+.faq-i{border-bottom:1px solid var(--border);cursor:pointer}
+.faq-q{display:flex;justify-content:space-between;align-items:center;padding:22px 0;gap:16px}
+.faq-q h3{font-size:14px;font-weight:600;color:var(--text);transition:0.3s}
+.faq-i:hover .faq-q h3{color:var(--accent)}
+.faq-tog{width:24px;height:24px;border-radius:50%;border:1px solid var(--border);display:flex;align-items:center;justify-content:center;font-size:14px;color:var(--text-muted);flex-shrink:0;transition:0.3s}
+.faq-i.open .faq-tog{background:var(--accent);color:#000;border-color:var(--accent);transform:rotate(45deg)}
+.faq-a{max-height:0;overflow:hidden;transition:max-height 0.4s ease}
+.faq-a-inner{padding:0 0 20px;font-size:13.5px;color:var(--text-muted);line-height:1.8}
 
-/* ── CTA BANNER ──────────────────────────────── */
-.cta-banner { background: var(--bg); padding: 80px 0; border-top: 1px solid var(--border); }
-.cta-inner { display: flex; align-items: center; justify-content: space-between; }
-.cta-inner h2 { font-size: clamp(1.4rem, 2.5vw, 1.8rem); color: var(--text-bright); font-weight: 600; line-height: 1.3; max-width: 480px; }
+/* ── CONTACT ──────────────────── */
+#contact{padding:120px 0;background:var(--bg)}
+.contact-g{display:grid;grid-template-columns:1fr 1.3fr;gap:56px;margin-top:48px}
+.c-info{display:flex;flex-direction:column;gap:28px}
+.c-item h4{font-size:10px;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:2px;margin-bottom:6px}
+.c-item p{font-size:15px;color:var(--text-bright)}
+.c-item a{color:var(--text-bright);text-decoration:none;transition:0.3s}
+.c-item a:hover{color:var(--accent)}
+.c-map{overflow:hidden;filter:grayscale(100%) brightness(0.55) contrast(1.1);min-height:380px}
+.c-map iframe{width:100%;height:100%;border:0}
 
-/* ── FOOTER ──────────────────────────────────── */
-footer { background: var(--bg-deep); padding: 56px 0 32px; border-top: 1px solid var(--border); }
-.footer-inner { display: grid; grid-template-columns: 1.5fr 1fr 1fr 1fr; gap: 40px; }
-.footer-brand img { height: 26px; filter: brightness(0) invert(1); margin-bottom: 14px; }
-.footer-brand p { font-size: 13px; line-height: 1.7; color: var(--text-muted); max-width: 260px; }
-.footer-col h4 { font-size: 10px; font-weight: 700; color: var(--text-secondary); text-transform: uppercase; letter-spacing: 2px; margin-bottom: 16px; }
-.footer-col a { display: block; color: var(--text-muted); text-decoration: none; font-size: 13px; margin-bottom: 10px; transition: var(--transition); }
-.footer-col a:hover { color: var(--text); }
-.footer-bottom { margin-top: 40px; padding-top: 20px; border-top: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center; font-size: 12px; color: var(--text-muted); }
+/* ── FOOTER ───────────────────── */
+footer{background:var(--bg-sec);padding:56px 0 28px;border-top:1px solid var(--border)}
+.ft-inner{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:40px}
+.ft-brand img{height:24px;filter:brightness(0) invert(1);margin-bottom:14px}
+.ft-brand p{font-size:13px;color:var(--text-muted);line-height:1.7;max-width:260px}
+.ft-col h4{font-size:10px;font-weight:700;color:var(--text);text-transform:uppercase;letter-spacing:2px;margin-bottom:16px}
+.ft-col a{display:block;color:var(--text-muted);text-decoration:none;font-size:13px;margin-bottom:10px;transition:0.3s}
+.ft-col a:hover{color:var(--text-bright)}
+.ft-bot{margin-top:40px;padding-top:20px;border-top:1px solid var(--border);display:flex;justify-content:space-between;font-size:12px;color:var(--text-muted)}
 
-/* ── STICKY MOBILE CTA ───────────────────────── */
-.mobile-cta { display: none; position: fixed; bottom: 0; left: 0; right: 0; z-index: 999; background: var(--bg-deep); border-top: 1px solid var(--border); padding: 12px 16px; }
-.mobile-cta-inner { display: flex; gap: 8px; }
-.mobile-cta a { flex: 1; text-align: center; padding: 14px; font-size: 12px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; text-decoration: none; border-radius: 2px; }
-.mobile-cta .mcta-call { background: var(--accent); color: var(--bg-deep); }
-.mobile-cta .mcta-quote { background: transparent; border: 1px solid rgba(255,255,255,0.2); color: var(--text); }
+/* ── MOBILE CTA ───────────────── */
+.mob-cta{display:none;position:fixed;bottom:0;left:0;right:0;z-index:99;background:var(--bg-sec);border-top:1px solid var(--border);padding:10px 16px;backdrop-filter:blur(20px)}
+.mob-cta-i{display:flex;gap:8px}
+.mob-cta a{flex:1;text-align:center;padding:14px;font-size:11px;font-weight:700;letter-spacing:1px;text-transform:uppercase;text-decoration:none}
+.mob-cta .mc-call{background:var(--accent);color:#000}
+.mob-cta .mc-quote{border:1px solid rgba(255,255,255,0.15);color:var(--text-bright)}
 
-/* ── RESPONSIVE ──────────────────────────────── */
-@media (max-width: 1024px) {
-  .wrap { padding: 0 32px; }
-  .nav-inner { padding: 14px 32px; }
-  .hero-content { padding: 120px 32px 80px; }
-  .services-grid, .why-grid { grid-template-columns: repeat(2, 1fr); }
-  .process-grid { grid-template-columns: repeat(2, 1fr); gap: 24px; }
-  .process-grid::before { display: none; }
-  .gallery-grid { grid-template-columns: 1fr 1fr; grid-template-rows: 220px 220px 220px; }
-  .gallery-item:first-child { grid-row: span 1; }
-  .faq-grid { grid-template-columns: 1fr; }
+/* ── RESPONSIVE ───────────────── */
+@media(max-width:1024px){
+  .w,.nav-i{padding-left:32px;padding-right:32px}
+  .hero{grid-template-columns:1fr}
+  .hero-right{display:none}
+  .hero-left{background:url('hero-bg.jpg') center/cover;position:relative}
+  .hero-left::after{content:'';position:absolute;inset:0;background:rgba(14,14,14,0.88)}
+  .hero-left .w-left{position:relative;z-index:1;padding-left:32px}
+  .svc-grid,.rev-grid{grid-template-columns:repeat(2,1fr)}
+  .proc-grid{grid-template-columns:repeat(2,1fr);gap:24px}
+  .proc-grid::before{display:none}
+  .gal-grid{grid-template-columns:1fr 1fr;grid-template-rows:240px 240px 240px}
+  .gal-item:first-child{grid-row:span 1}
+  .quote-content,.why-g{grid-template-columns:1fr}
+  .why-visual{display:none}
+  .faq-g{grid-template-columns:1fr}
 }
-
-@media (max-width: 768px) {
-  section { padding: 80px 0; }
-  .wrap { padding: 0 24px; }
-  .nav-inner { padding: 14px 24px; }
-  .nav-links { display: none; }
-  .hamburger { display: block; }
-  .nav-links.active { display: flex; flex-direction: column; position: absolute; top: 100%; left: 0; right: 0; background: var(--bg-deep); padding: 20px 24px; gap: 16px; border-bottom: 1px solid var(--border); }
-  .hero-content { padding: 110px 24px 80px; }
-  .hero-text h1 { font-size: 2rem; }
-  .about-grid { grid-template-columns: 1fr; gap: 40px; }
-  .about-image img { height: 300px; }
-  .about-features { grid-template-columns: 1fr; }
-  .services-header { flex-direction: column; align-items: flex-start; gap: 16px; }
-  .services-grid, .why-grid, .process-grid { grid-template-columns: 1fr; }
-  .gallery-grid { grid-template-columns: 1fr; grid-template-rows: auto; }
-  .gallery-item img { height: 220px; }
-  .testimonials-grid { grid-template-columns: 1fr; }
-  .contact-grid { grid-template-columns: 1fr; }
-  .cta-inner { flex-direction: column; text-align: center; gap: 24px; }
-  .footer-inner { grid-template-columns: 1fr 1fr; gap: 28px; }
-  .footer-bottom { flex-direction: column; gap: 10px; text-align: center; }
-  .mobile-cta { display: block; }
-  body { padding-bottom: 70px; }
-  .trust-items { gap: 20px; }
-  .trust-divider { display: none; }
+@media(max-width:768px){
+  .w,.nav-i{padding-left:20px;padding-right:20px}
+  .nav-links{display:none}
+  .ham{display:block}
+  .nav-links.active{display:flex;flex-direction:column;position:absolute;top:100%;left:0;right:0;background:var(--bg-sec);padding:20px;gap:14px;border-bottom:1px solid var(--border)}
+  .hero-left .w-left{padding-left:20px}
+  section,#about,#services,#process,#why,#gallery,#reviews,#quote,#faq,#contact{padding:80px 0}
+  .about-g{grid-template-columns:1fr;gap:40px}
+  .about-img{aspect-ratio:16/9}
+  .about-feats{grid-template-columns:1fr}
+  .svc-grid,.proc-grid{grid-template-columns:1fr}
+  .svc-top{flex-direction:column;align-items:flex-start}
+  .svc-top .desc{text-align:left}
+  .gal-grid{grid-template-columns:1fr;grid-template-rows:auto}
+  .gal-item img{height:220px}
+  .rev-grid{grid-template-columns:1fr}
+  .contact-g{grid-template-columns:1fr}
+  .quote-form .row{grid-template-columns:1fr}
+  .ft-inner{grid-template-columns:1fr 1fr;gap:24px}
+  .ft-bot{flex-direction:column;gap:8px;text-align:center}
+  .mob-cta{display:block}
+  body{padding-bottom:68px}
+  .img-break{height:40vh}
 }
-
-@media (max-width: 480px) {
-  section { padding: 64px 0; }
-  .footer-inner { grid-template-columns: 1fr; }
-  .hero-buttons { flex-direction: column; }
-  .hero-buttons .btn-accent, .hero-buttons .btn-outline { width: 100%; justify-content: center; }
+@media(max-width:480px){
+  .ft-inner{grid-template-columns:1fr}
+  .hero-actions{flex-direction:column}
+  .hero-actions a{width:100%;justify-content:center}
 }
 </style>
 </head>
@@ -291,84 +286,81 @@ footer { background: var(--bg-deep); padding: 56px 0 32px; border-top: 1px solid
 
 <!-- NAV -->
 <nav>
-  <div class="nav-inner">
+  <div class="nav-i">
     <a href="#" class="nav-logo"><img src="uno-logo.jpg" alt="Uno Drywall"></a>
-    <ul class="nav-links" id="navLinks">
-      <li><a href="#about">About</a></li>
-      <li><a href="#services">Services</a></li>
-      <li><a href="#gallery">Projects</a></li>
-      <li><a href="#testimonials">Reviews</a></li>
-      <li><a href="#faq">FAQ</a></li>
-      <li><a href="tel:6477680850" class="nav-phone">(647) 768-0850</a></li>
-      <li><a href="#contact" class="nav-cta">Free Estimate</a></li>
-    </ul>
-    <button class="hamburger" onclick="document.getElementById('navLinks').classList.toggle('active')" aria-label="Menu">
-      <span></span><span></span><span></span>
-    </button>
+    <div class="nav-r">
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#gallery">Projects</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <a href="tel:6477680850" class="nav-phone">(647) 768-0850</a>
+      <a href="#quote" class="nav-cta">Free Quote</a>
+    </div>
+    <button class="ham" onclick="document.getElementById('navLinks').classList.toggle('active')" aria-label="Menu"><span></span><span></span><span></span></button>
   </div>
 </nav>
 
 <!-- HERO -->
 <section class="hero">
-  <div class="hero-bg"></div>
-  <div class="hero-content">
-    <div class="hero-text">
-      <div class="hero-accent"></div>
-      <h1>Professional <span>Drywall</span> Solutions for the GTA Construction Industry.</h1>
-      <p class="hero-subtitle">Expert installation, finishing, and interior systems for commercial and residential projects. Licensed, insured, and built on quality craftsmanship.</p>
-      <div class="hero-buttons">
-        <a href="tel:6477680850" class="btn-accent">Call (647) 768-0850</a>
-        <a href="#contact" class="btn-outline">Get Free Estimate</a>
+  <div class="hero-left">
+    <div class="w-left">
+      <div class="hero-tag"><span class="dot"></span> Serving the Greater Toronto Area</div>
+      <h1>We build the walls<br>your project stands on.</h1>
+      <p class="hero-sub">Drywall installation, steel framing, taping & finishing for commercial and residential builds. Over 500 projects completed across the GTA.</p>
+      <div class="hero-actions">
+        <a href="#quote" class="btn-primary">Get Your Free Quote</a>
+        <a href="tel:6477680850" class="btn-ghost">Call (647) 768-0850</a>
       </div>
-      <div class="hero-micro-review">
-        <span class="hero-micro-stars">★★★★★</span>
-        <span class="hero-micro-text"><strong>4.9/5</strong> — rated by GTA homeowners & contractors</span>
+      <div class="hero-proof">
+        <span class="hero-proof-stars">★★★★★</span>
+        <span class="hero-proof-text"><b>4.9 out of 5</b> — rated by GTA homeowners & general contractors</span>
       </div>
     </div>
   </div>
-  <div class="hero-scroll"><span>Scroll</span><div class="scroll-line"></div></div>
+  <div class="hero-right">
+    <img src="hero-bg.jpg" alt="Construction site">
+  </div>
 </section>
 
 <!-- TRUST BAR -->
-<div class="trust-bar">
-  <div class="wrap">
-    <div class="trust-items">
-      <div class="trust-item"><span class="num">10+</span> Years Experience</div>
-      <div class="trust-divider"></div>
-      <div class="trust-item"><span class="num">500+</span> Projects Completed</div>
-      <div class="trust-divider"></div>
-      <div class="trust-item"><span class="num">100%</span> Satisfaction Rate</div>
-      <div class="trust-divider"></div>
-      <div class="trust-item">Licensed &amp; WSIB Insured</div>
-      <div class="trust-divider"></div>
-      <div class="trust-item">Free Estimates</div>
+<div class="trust">
+  <div class="w">
+    <div class="trust-track">
+      <div class="trust-item"><span class="n" data-count="10">0</span><span class="t">+ Years Experience</span></div>
+      <div class="trust-sep"></div>
+      <div class="trust-item"><span class="n" data-count="500">0</span><span class="t">+ Projects Completed</span></div>
+      <div class="trust-sep"></div>
+      <div class="trust-item"><span class="n" data-count="98">0</span><span class="t">% Satisfaction Rate</span></div>
+      <div class="trust-sep"></div>
+      <div class="trust-item"><span class="t" style="color:var(--text)">Licensed · WSIB Insured · Free Estimates</span></div>
     </div>
   </div>
 </div>
 
 <!-- ABOUT -->
 <section id="about">
-  <div class="wrap">
-    <div class="about-grid">
-      <div class="about-image">
-        <img src="about-img.jpg" alt="Uno Drywall team" loading="lazy">
-        <div class="about-badge">
-          <div class="num">10+</div>
-          <div class="txt">Years of<br>Experience</div>
-        </div>
+  <div class="w">
+    <div class="about-g">
+      <div class="about-img reveal">
+        <img src="about-img.jpg" alt="Uno Drywall crew" loading="lazy">
+        <div class="about-badge"><div class="ab-n">10+</div><div class="ab-t">Years<br>Experience</div></div>
       </div>
-      <div class="about-text">
-        <div class="section-label">About Us</div>
-        <h2 class="section-title">Building quality walls, one project at a time.</h2>
-        <p>Uno Drywall Ltd is a full-service drywall and interior systems contractor based in Etobicoke, Ontario. We deliver high-quality solutions for commercial and residential projects throughout the Greater Toronto Area.</p>
-        <p>From new construction to large-scale renovations, our experienced team handles every project with precision, clean workmanship, and respect for your timeline. We do the job right the first time.</p>
-        <div class="about-features">
-          <div class="about-feature">Licensed & Insured</div>
-          <div class="about-feature">Residential & Commercial</div>
-          <div class="about-feature">Free Estimates</div>
-          <div class="about-feature">Clean Worksites</div>
-          <div class="about-feature">On-Time Delivery</div>
-          <div class="about-feature">GTA-Wide Service</div>
+      <div class="about-text reveal">
+        <span class="tag">About Uno Drywall</span>
+        <h2 class="about-title">We don't just hang drywall. We build reputations.</h2>
+        <p>Uno Drywall Ltd started with one truck, one crew, and a commitment to doing the job right the first time. Based in Etobicoke, we've grown into one of the GTA's most trusted drywall subcontractors — serving general contractors, developers, and homeowners across the region.</p>
+        <p>Every project gets the same treatment: premium materials, clean workmanship, daily site cleanup, and a team that shows up on time. That's not a tagline — it's how we've kept clients coming back for over a decade.</p>
+        <div class="about-feats">
+          <div class="about-feat">Licensed & WSIB Insured</div>
+          <div class="about-feat">Commercial & Residential</div>
+          <div class="about-feat">Free On-Site Estimates</div>
+          <div class="about-feat">Daily Site Cleanup</div>
+          <div class="about-feat">Flexible Scheduling</div>
+          <div class="about-feat">GTA-Wide Coverage</div>
         </div>
       </div>
     </div>
@@ -377,196 +369,191 @@ footer { background: var(--bg-deep); padding: 56px 0 32px; border-top: 1px solid
 
 <!-- SERVICES -->
 <section id="services">
-  <div class="wrap">
-    <div class="services-header">
+  <div class="w">
+    <div class="svc-top reveal">
       <div>
-        <div class="section-label">Our Services</div>
-        <h2 class="section-title">Complete drywall &amp; interior solutions.</h2>
+        <span class="tag">Our Services</span>
+        <h2 class="section-title" style="font-family:var(--heading);font-weight:700">Everything between the studs and the paint.</h2>
       </div>
-      <p class="section-desc">From framing to finishing, we handle every step with expert craftsmanship and premium materials.</p>
+      <p class="desc">We handle framing, boarding, taping, finishing, insulation, and ceiling systems — so you don't need three subs when one will do.</p>
     </div>
-    <div class="services-grid">
-      <div class="service-card">
-        <div class="service-icon"><svg viewBox="0 0 40 40"><rect x="4" y="8" width="32" height="24" rx="1"/><line x1="4" y1="20" x2="36" y2="20"/><line x1="20" y1="8" x2="20" y2="32"/></svg></div>
-        <h3>Drywall Installation</h3>
-        <p>Full board installation for new builds, additions, and renovations. Precise hanging with clean lines.</p>
-      </div>
-      <div class="service-card">
-        <div class="service-icon"><svg viewBox="0 0 40 40"><path d="M8 32 L20 8 L32 32"/><line x1="12" y1="24" x2="28" y2="24"/><circle cx="20" cy="16" r="2"/></svg></div>
-        <h3>Taping & Finishing</h3>
-        <p>Expert joint taping, mudding, and sanding. Level 3 through 5 finishes available.</p>
-      </div>
-      <div class="service-card">
-        <div class="service-icon"><svg viewBox="0 0 40 40"><line x1="8" y1="8" x2="8" y2="32"/><line x1="20" y1="4" x2="20" y2="36"/><line x1="32" y1="8" x2="32" y2="32"/><line x1="4" y1="14" x2="36" y2="14"/><line x1="4" y1="26" x2="36" y2="26"/></svg></div>
-        <h3>Steel Framing</h3>
-        <p>Light-gauge steel stud framing for walls, bulkheads, soffits, and ceiling grids.</p>
-      </div>
-      <div class="service-card">
-        <div class="service-icon"><svg viewBox="0 0 40 40"><rect x="6" y="6" width="28" height="4" rx="1"/><line x1="10" y1="10" x2="10" y2="34"/><line x1="20" y1="10" x2="20" y2="34"/><line x1="30" y1="10" x2="30" y2="34"/><line x1="6" y1="22" x2="34" y2="22"/></svg></div>
-        <h3>T-Bar & Suspended Ceilings</h3>
-        <p>Drop ceiling systems with clean grid installation and acoustical tile options.</p>
-      </div>
-      <div class="service-card">
-        <div class="service-icon"><svg viewBox="0 0 40 40"><path d="M6 20 C6 10, 20 4, 20 4 C20 4, 34 10, 34 20 L34 34 L6 34 Z"/><line x1="6" y1="28" x2="34" y2="28"/></svg></div>
-        <h3>Insulation & Soundproofing</h3>
-        <p>Batt, blown-in, and soundproofing insulation for energy efficiency and noise reduction.</p>
-      </div>
-      <div class="service-card">
-        <div class="service-icon"><svg viewBox="0 0 40 40"><circle cx="20" cy="20" r="14"/><path d="M14 20 L18 24 L26 16"/></svg></div>
-        <h3>Drywall Repairs</h3>
-        <p>Water damage repair, patching, and crack treatment. Invisible repairs that blend perfectly.</p>
-      </div>
-      <div class="service-card">
-        <div class="service-icon"><svg viewBox="0 0 40 40"><path d="M8 32 Q14 16, 20 24 Q26 32, 32 8"/><line x1="4" y1="32" x2="36" y2="32"/></svg></div>
-        <h3>Texture & Specialty Finishes</h3>
-        <p>Knockdown, orange peel, skim coats, and custom textures to any specification.</p>
-      </div>
-      <div class="service-card">
-        <div class="service-icon"><svg viewBox="0 0 40 40"><rect x="8" y="12" width="24" height="20" rx="1"/><polyline points="8 16 20 8 32 16"/><line x1="16" y1="32" x2="16" y2="24"/><line x1="24" y1="32" x2="24" y2="24"/><line x1="16" y1="24" x2="24" y2="24"/></svg></div>
-        <h3>Full Interior Systems</h3>
-        <p>Complete packages: framing, boarding, finishing, and ceiling systems for turnkey delivery.</p>
-      </div>
+    <div class="svc-grid reveal">
+      <div class="svc"><div class="svc-num">01</div><h3>Drywall Installation</h3><p>Full board hanging for new builds, additions, and renovations. Clean lines, minimal waste, every time.</p></div>
+      <div class="svc"><div class="svc-num">02</div><h3>Taping & Finishing</h3><p>Level 3 through Level 5 finishes. Seamless joints, paint-ready surfaces, no callbacks.</p></div>
+      <div class="svc"><div class="svc-num">03</div><h3>Steel Stud Framing</h3><p>Light-gauge steel framing for walls, bulkheads, and soffits. Straight, square, plumb — guaranteed.</p></div>
+      <div class="svc"><div class="svc-num">04</div><h3>T-Bar & Drop Ceilings</h3><p>Suspended ceiling systems with acoustical tiles for offices, basements, and commercial spaces.</p></div>
+      <div class="svc"><div class="svc-num">05</div><h3>Insulation & Soundproofing</h3><p>Batt and blown-in insulation. Thermal and acoustic solutions for walls and ceilings.</p></div>
+      <div class="svc"><div class="svc-num">06</div><h3>Drywall Repairs</h3><p>Water damage, holes, cracks — patched and blended so you'd never know we were there.</p></div>
+      <div class="svc"><div class="svc-num">07</div><h3>Texture & Skim Coats</h3><p>Knockdown, orange peel, smooth skim, and custom textures matched to any spec.</p></div>
+      <div class="svc"><div class="svc-num">08</div><h3>Turnkey Interior Packages</h3><p>Frame-to-finish interior builds. One crew, one point of contact, delivered complete.</p></div>
     </div>
   </div>
 </section>
 
+<!-- IMAGE BREAK -->
+<div class="img-break">
+  <img src="cta-bg.jpg" alt="Construction site" loading="lazy">
+  <div class="img-break-content">
+    <h2>500+ projects completed. Zero left unfinished.</h2>
+    <p>That's not a claim — it's a track record.</p>
+  </div>
+</div>
+
 <!-- PROCESS -->
 <section id="process">
-  <div class="wrap">
-    <div class="process-header">
-      <div class="section-label">How It Works</div>
-      <h2 class="section-title">From call to completion in four steps.</h2>
-      <p class="section-desc" style="margin: 0 auto;">A straightforward process designed to respect your time and deliver results on schedule.</p>
+  <div class="w">
+    <div class="proc-header reveal">
+      <span class="tag" style="display:block;text-align:center">How It Works</span>
+      <h2 class="section-title" style="font-family:var(--heading);font-weight:700;text-align:center">Four steps. No surprises.</h2>
     </div>
-    <div class="process-grid">
-      <div class="process-step">
-        <div class="process-num">1</div>
-        <h3>Request</h3>
-        <p>Call us or fill out a form. We'll schedule a free on-site consultation within 48 hours.</p>
-      </div>
-      <div class="process-step">
-        <div class="process-num">2</div>
-        <h3>Estimate</h3>
-        <p>Receive a detailed, transparent quote with no hidden fees. Scope, timeline, and costs — all upfront.</p>
-      </div>
-      <div class="process-step">
-        <div class="process-num">3</div>
-        <h3>Execute</h3>
-        <p>Our crew arrives on time with premium materials. Daily cleanup, dust containment, quality at every step.</p>
-      </div>
-      <div class="process-step">
-        <div class="process-num">4</div>
-        <h3>Deliver</h3>
-        <p>Final walkthrough with you. We're not done until every wall, ceiling, and finish meets your expectations.</p>
-      </div>
+    <div class="proc-grid reveal">
+      <div class="proc"><div class="proc-n">1</div><h3>Call or Request</h3><p>Reach out by phone or form. We'll schedule a free site visit within 48 hours.</p></div>
+      <div class="proc"><div class="proc-n">2</div><h3>Get Your Quote</h3><p>Detailed scope, timeline, and pricing. No hidden costs, no pressure. Take your time.</p></div>
+      <div class="proc"><div class="proc-n">3</div><h3>We Get to Work</h3><p>Our crew shows up on time with premium materials. Clean, fast, zero shortcuts.</p></div>
+      <div class="proc"><div class="proc-n">4</div><h3>Final Walkthrough</h3><p>We walk the job with you. Not done until every wall and finish meets your standard.</p></div>
     </div>
   </div>
 </section>
 
 <!-- WHY US -->
-<section id="why-us">
-  <div class="wrap">
-    <div class="why-header">
-      <div class="section-label">Why Choose Us</div>
-      <h2 class="section-title">What sets Uno Drywall apart.</h2>
-    </div>
-    <div class="why-grid">
-      <div class="why-card"><div class="why-num">01</div><h3>Licensed & Insured</h3><p>Complete liability coverage and WSIB. Your project is protected from day one.</p></div>
-      <div class="why-card"><div class="why-num">02</div><h3>Transparent Pricing</h3><p>Detailed quotes with no hidden fees. You know what you're paying before work begins.</p></div>
-      <div class="why-card"><div class="why-num">03</div><h3>On-Time Delivery</h3><p>We coordinate with your trades and respect your schedule. Deadlines met, every time.</p></div>
-      <div class="why-card"><div class="why-num">04</div><h3>Clean Worksites</h3><p>Daily cleanup and dust containment. We treat your space like it's our own.</p></div>
-      <div class="why-card"><div class="why-num">05</div><h3>Premium Materials</h3><p>Top-grade drywall, compounds, and fasteners. No shortcuts on quality.</p></div>
-      <div class="why-card"><div class="why-num">06</div><h3>Experienced Crews</h3><p>Skilled tradespeople with years of commercial and residential experience.</p></div>
-      <div class="why-card"><div class="why-num">07</div><h3>GTA-Wide Service</h3><p>Toronto, Etobicoke, Mississauga, Brampton, Vaughan, Markham, and beyond.</p></div>
-      <div class="why-card"><div class="why-num">08</div><h3>Satisfaction Guaranteed</h3><p>We stand behind every wall, ceiling, and finish we deliver. Period.</p></div>
+<section id="why">
+  <div class="w">
+    <div class="why-g">
+      <div class="reveal">
+        <span class="tag">Why Uno Drywall</span>
+        <h2 class="section-title" style="font-family:var(--heading);font-weight:700;margin-bottom:32px">The difference is in the details.</h2>
+        <div class="why-list">
+          <div class="why-item"><div class="why-n">01</div><div><h3>We Show Up On Time</h3><p>Every day, every project. We coordinate with your trades and never hold up the schedule. That's not a promise — it's policy.</p></div></div>
+          <div class="why-item"><div class="why-n">02</div><div><h3>Clean Sites, Always</h3><p>Daily dust containment and cleanup on every job. Your site stays organized because our reputation depends on it.</p></div></div>
+          <div class="why-item"><div class="why-n">03</div><div><h3>Transparent Quotes</h3><p>You get a line-by-line breakdown before we pick up a tool. What we quote is what you pay. Period.</p></div></div>
+          <div class="why-item"><div class="why-n">04</div><div><h3>One Crew, Start to Finish</h3><p>The same experienced team from day one to final walkthrough. No rotating workers, no miscommunication, no excuses.</p></div></div>
+        </div>
+      </div>
+      <div class="why-visual reveal">
+        <img src="gallery-3.jpg" alt="Drywall project" loading="lazy">
+        <div class="why-stat"><div class="ws-n">500+</div><div class="ws-t">Projects Delivered</div></div>
+      </div>
     </div>
   </div>
 </section>
 
 <!-- GALLERY -->
 <section id="gallery">
-  <div class="wrap">
-    <div class="section-label">Our Work</div>
-    <h2 class="section-title">Recent projects.</h2>
-    <div class="gallery-grid">
-      <div class="gallery-item"><img src="gallery-1.jpg" alt="Commercial installation" loading="lazy"><div class="gallery-overlay"><span>Commercial Installation</span></div></div>
-      <div class="gallery-item"><img src="gallery-2.jpg" alt="Residential finishing" loading="lazy"><div class="gallery-overlay"><span>Residential Finishing</span></div></div>
-      <div class="gallery-item"><img src="gallery-3.jpg" alt="Steel framing" loading="lazy"><div class="gallery-overlay"><span>Steel Framing</span></div></div>
-      <div class="gallery-item"><img src="gallery-4.jpg" alt="Basement renovation" loading="lazy"><div class="gallery-overlay"><span>Basement Renovation</span></div></div>
-      <div class="gallery-item"><img src="gallery-5.jpg" alt="Suspended ceilings" loading="lazy"><div class="gallery-overlay"><span>Suspended Ceilings</span></div></div>
-      <div class="gallery-item"><img src="gallery-6.jpg" alt="Repair & patching" loading="lazy"><div class="gallery-overlay"><span>Repair &amp; Patching</span></div></div>
+  <div class="w">
+    <span class="tag">Our Work</span>
+    <h2 class="section-title" style="font-family:var(--heading);font-weight:700">Recent projects across the GTA.</h2>
+    <div class="gal-grid reveal">
+      <div class="gal-item"><img src="gallery-1.jpg" alt="Commercial project" loading="lazy"><div class="gal-ov"><div class="gal-line"></div><span>Commercial Build</span><small>Toronto, ON</small></div></div>
+      <div class="gal-item"><img src="gallery-2.jpg" alt="Residential finish" loading="lazy"><div class="gal-ov"><div class="gal-line"></div><span>Residential Interior</span><small>Etobicoke, ON</small></div></div>
+      <div class="gal-item"><img src="gallery-3.jpg" alt="Steel framing" loading="lazy"><div class="gal-ov"><div class="gal-line"></div><span>Steel Framing</span><small>Mississauga, ON</small></div></div>
+      <div class="gal-item"><img src="gallery-4.jpg" alt="Basement reno" loading="lazy"><div class="gal-ov"><div class="gal-line"></div><span>Basement Renovation</span><small>Brampton, ON</small></div></div>
+      <div class="gal-item"><img src="gallery-5.jpg" alt="Ceiling work" loading="lazy"><div class="gal-ov"><div class="gal-line"></div><span>Ceiling Systems</span><small>Vaughan, ON</small></div></div>
+      <div class="gal-item"><img src="gallery-6.jpg" alt="Repair work" loading="lazy"><div class="gal-ov"><div class="gal-line"></div><span>Drywall Repair</span><small>Markham, ON</small></div></div>
     </div>
   </div>
 </section>
 
 <!-- TESTIMONIALS -->
-<section id="testimonials">
-  <div class="wrap">
-    <div class="section-label">Testimonials</div>
-    <h2 class="section-title">What our clients say.</h2>
-    <div class="testimonials-grid">
-      <div class="testimonial-card">
-        <div class="testimonial-stars">★ ★ ★ ★ ★</div>
-        <p class="testimonial-text">"Uno Drywall did an incredible job on our basement renovation. The finishing was flawless — you can't even see the seams. On time every day, site left spotless."</p>
-        <div class="testimonial-div"></div>
-        <div class="testimonial-name">Marco R.</div>
-        <div class="testimonial-role">Homeowner — Etobicoke</div>
+<section id="reviews">
+  <div class="w">
+    <span class="tag">What Clients Say</span>
+    <h2 class="section-title" style="font-family:var(--heading);font-weight:700">We let our work speak. But our clients do too.</h2>
+    <div class="rev-grid reveal">
+      <div class="rev">
+        <div class="rev-stars">★ ★ ★ ★ ★</div>
+        <p class="rev-text">"Uno Drywall handled our entire basement — framing, boarding, taping. The finish was flawless. You can't see a single seam. They showed up every morning at 7 and left the site cleaner than they found it."</p>
+        <div class="rev-div"></div>
+        <div class="rev-name">Marco R.</div>
+        <div class="rev-role">Homeowner — Etobicoke</div>
       </div>
-      <div class="testimonial-card">
-        <div class="testimonial-stars">★ ★ ★ ★ ★</div>
-        <p class="testimonial-text">"We've used Uno Drywall on three commercial builds. Steel framing is perfectly straight, boarding is clean, and they never hold up the schedule. Our go-to sub."</p>
-        <div class="testimonial-div"></div>
-        <div class="testimonial-name">Sarah K.</div>
-        <div class="testimonial-role">Project Manager — Mississauga</div>
+      <div class="rev">
+        <div class="rev-stars">★ ★ ★ ★ ★</div>
+        <p class="rev-text">"We've subbed Uno on three commercial builds now. Framing is dead straight, boarding is tight, and they coordinate with other trades without being asked. They're our go-to and it's not close."</p>
+        <div class="rev-div"></div>
+        <div class="rev-name">Sarah K.</div>
+        <div class="rev-role">Project Manager — Mississauga</div>
       </div>
-      <div class="testimonial-card">
-        <div class="testimonial-stars">★ ★ ★ ★ ★</div>
-        <p class="testimonial-text">"Had serious water damage in our ceiling. Antonio and his crew patched and refinished it perfectly — you'd never know anything happened. Fair price, great work."</p>
-        <div class="testimonial-div"></div>
-        <div class="testimonial-name">James T.</div>
-        <div class="testimonial-role">Homeowner — Brampton</div>
+      <div class="rev">
+        <div class="rev-stars">★ ★ ★ ★ ★</div>
+        <p class="rev-text">"Had bad water damage in the living room ceiling. Antonio came out the next day, quoted it fair, and his crew made it look like nothing ever happened. Would hire again in a heartbeat."</p>
+        <div class="rev-div"></div>
+        <div class="rev-name">James T.</div>
+        <div class="rev-role">Homeowner — Brampton</div>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- QUOTE FORM -->
+<section id="quote">
+  <div class="quote-bg"><img src="cta-bg.jpg" alt="" loading="lazy"></div>
+  <div class="w">
+    <div class="quote-content reveal">
+      <div class="quote-left">
+        <span class="tag">Request a Quote</span>
+        <h2>Get a free estimate for your project. No obligation.</h2>
+        <p>Fill out the form and we'll get back to you within 24 hours with a detailed quote. Or call us directly:</p>
+        <a href="tel:6477680850" class="quote-phone">(647) 768-0850</a>
+      </div>
+      <form class="quote-form" onsubmit="event.preventDefault();this.querySelector('.quote-submit').textContent='SENT — WE\'LL CALL YOU';this.querySelector('.quote-submit').style.background='#2a7d2a'">
+        <div class="row">
+          <input type="text" placeholder="Your Name" required>
+          <input type="tel" placeholder="Phone Number" required>
+        </div>
+        <input type="email" placeholder="Email Address">
+        <select>
+          <option value="" disabled selected>Project Type</option>
+          <option>New Construction</option>
+          <option>Renovation</option>
+          <option>Commercial Build</option>
+          <option>Basement Finish</option>
+          <option>Repair / Patch</option>
+          <option>Other</option>
+        </select>
+        <textarea placeholder="Tell us about your project (optional)" rows="3"></textarea>
+        <button type="submit" class="quote-submit">Send Request</button>
+      </form>
     </div>
   </div>
 </section>
 
 <!-- FAQ -->
 <section id="faq">
-  <div class="wrap">
-    <div class="section-label">FAQ</div>
-    <h2 class="section-title">Frequently asked questions.</h2>
-    <div class="faq-grid">
-      <div class="faq-item" onclick="this.classList.toggle('open')">
-        <div class="faq-q"><h3>How much does drywall installation cost per square foot?</h3><div class="faq-toggle">+</div></div>
-        <div class="faq-a"><div class="faq-a-inner">Drywall installation in the GTA typically ranges from $2.50 to $5.00 per square foot depending on the project scope, ceiling height, and finish level. Contact us for a free, detailed estimate tailored to your specific project.</div></div>
+  <div class="w">
+    <span class="tag">FAQ</span>
+    <h2 class="section-title" style="font-family:var(--heading);font-weight:700">Questions we get asked a lot.</h2>
+    <div class="faq-g">
+      <div class="faq-i" onclick="this.classList.toggle('open');var a=this.querySelector('.faq-a');a.style.maxHeight=this.classList.contains('open')?a.scrollHeight+'px':'0'">
+        <div class="faq-q"><h3>How much does drywall cost per square foot in Toronto?</h3><div class="faq-tog">+</div></div>
+        <div class="faq-a"><div class="faq-a-inner">Typically $2.50–$5.00/sqft depending on scope, ceiling height, and finish level. We'll give you an exact number after a free site visit — no guesswork, no surprises.</div></div>
       </div>
-      <div class="faq-item" onclick="this.classList.toggle('open')">
-        <div class="faq-q"><h3>How long does a typical drywall project take?</h3><div class="faq-toggle">+</div></div>
-        <div class="faq-a"><div class="faq-a-inner">A typical residential room takes 2-3 days for boarding and finishing. Larger commercial projects are scoped individually. We always provide a clear timeline before any work begins.</div></div>
+      <div class="faq-i" onclick="this.classList.toggle('open');var a=this.querySelector('.faq-a');a.style.maxHeight=this.classList.contains('open')?a.scrollHeight+'px':'0'">
+        <div class="faq-q"><h3>How long does a typical project take?</h3><div class="faq-tog">+</div></div>
+        <div class="faq-a"><div class="faq-a-inner">A standard room: 2–3 days. A full basement: about a week. Commercial projects are scoped individually. We always give you a clear timeline before starting.</div></div>
       </div>
-      <div class="faq-item" onclick="this.classList.toggle('open')">
-        <div class="faq-q"><h3>Do you handle both commercial and residential projects?</h3><div class="faq-toggle">+</div></div>
-        <div class="faq-a"><div class="faq-a-inner">Yes. We serve residential homeowners, general contractors, and commercial developers across the Greater Toronto Area. No project is too big or too small.</div></div>
+      <div class="faq-i" onclick="this.classList.toggle('open');var a=this.querySelector('.faq-a');a.style.maxHeight=this.classList.contains('open')?a.scrollHeight+'px':'0'">
+        <div class="faq-q"><h3>Do you work with general contractors?</h3><div class="faq-tog">+</div></div>
+        <div class="faq-a"><div class="faq-a-inner">Absolutely. A large portion of our work comes from GCs who sub us on commercial and residential builds. We coordinate with other trades, meet deadlines, and don't hold up your schedule.</div></div>
       </div>
-      <div class="faq-item" onclick="this.classList.toggle('open')">
-        <div class="faq-q"><h3>Are you licensed and insured?</h3><div class="faq-toggle">+</div></div>
-        <div class="faq-a"><div class="faq-a-inner">Absolutely. Uno Drywall Ltd is fully licensed and carries comprehensive liability insurance and WSIB coverage for complete project protection.</div></div>
+      <div class="faq-i" onclick="this.classList.toggle('open');var a=this.querySelector('.faq-a');a.style.maxHeight=this.classList.contains('open')?a.scrollHeight+'px':'0'">
+        <div class="faq-q"><h3>Are you licensed and insured?</h3><div class="faq-tog">+</div></div>
+        <div class="faq-a"><div class="faq-a-inner">Yes. Full liability insurance and WSIB coverage. We can provide certificates on request for any project.</div></div>
       </div>
-      <div class="faq-item" onclick="this.classList.toggle('open')">
-        <div class="faq-q"><h3>What areas do you serve?</h3><div class="faq-toggle">+</div></div>
-        <div class="faq-a"><div class="faq-a-inner">We serve the entire Greater Toronto Area including Toronto, Etobicoke, Mississauga, Brampton, Vaughan, Markham, Richmond Hill, Oakville, and surrounding communities.</div></div>
+      <div class="faq-i" onclick="this.classList.toggle('open');var a=this.querySelector('.faq-a');a.style.maxHeight=this.classList.contains('open')?a.scrollHeight+'px':'0'">
+        <div class="faq-q"><h3>What areas do you cover?</h3><div class="faq-tog">+</div></div>
+        <div class="faq-a"><div class="faq-a-inner">The entire GTA — Toronto, Etobicoke, Mississauga, Brampton, Vaughan, Markham, Richmond Hill, Oakville, and surrounding areas.</div></div>
       </div>
-      <div class="faq-item" onclick="this.classList.toggle('open')">
-        <div class="faq-q"><h3>Do you provide free estimates?</h3><div class="faq-toggle">+</div></div>
-        <div class="faq-a"><div class="faq-a-inner">Yes. We offer free on-site consultations and detailed estimates with transparent pricing. No obligation, no hidden fees. Call us or use the contact form to schedule yours.</div></div>
+      <div class="faq-i" onclick="this.classList.toggle('open');var a=this.querySelector('.faq-a');a.style.maxHeight=this.classList.contains('open')?a.scrollHeight+'px':'0'">
+        <div class="faq-q"><h3>What finish levels do you offer?</h3><div class="faq-tog">+</div></div>
+        <div class="faq-a"><div class="faq-a-inner">Level 3, 4, and 5. Level 5 is our smoothest finish — ideal for areas with critical lighting. We'll recommend the right level based on your project.</div></div>
       </div>
-      <div class="faq-item" onclick="this.classList.toggle('open')">
-        <div class="faq-q"><h3>What finish levels do you offer?</h3><div class="faq-toggle">+</div></div>
-        <div class="faq-a"><div class="faq-a-inner">We offer Level 3, Level 4, and Level 5 finishes. Level 5 provides the smoothest, highest-quality surface — ideal for areas with critical lighting. We'll recommend the right level for your project.</div></div>
+      <div class="faq-i" onclick="this.classList.toggle('open');var a=this.querySelector('.faq-a');a.style.maxHeight=this.classList.contains('open')?a.scrollHeight+'px':'0'">
+        <div class="faq-q"><h3>Can you match existing textures?</h3><div class="faq-tog">+</div></div>
+        <div class="faq-a"><div class="faq-a-inner">Yes. Knockdown, orange peel, smooth — we match existing textures so repairs blend seamlessly. Most people can't tell where the patch starts and ends.</div></div>
       </div>
-      <div class="faq-item" onclick="this.classList.toggle('open')">
-        <div class="faq-q"><h3>Can you match existing wall textures for repairs?</h3><div class="faq-toggle">+</div></div>
-        <div class="faq-a"><div class="faq-a-inner">Yes. Our team specializes in matching existing textures including knockdown, orange peel, and smooth finishes. Our goal is invisible repairs that blend seamlessly with your existing walls.</div></div>
+      <div class="faq-i" onclick="this.classList.toggle('open');var a=this.querySelector('.faq-a');a.style.maxHeight=this.classList.contains('open')?a.scrollHeight+'px':'0'">
+        <div class="faq-q"><h3>Do you handle permits?</h3><div class="faq-tog">+</div></div>
+        <div class="faq-a"><div class="faq-a-inner">Drywall work itself typically doesn't require a permit in Ontario. If your project involves structural changes, we'll coordinate with your GC or advise on what's needed.</div></div>
       </div>
     </div>
   </div>
@@ -574,95 +561,55 @@ footer { background: var(--bg-deep); padding: 56px 0 32px; border-top: 1px solid
 
 <!-- CONTACT -->
 <section id="contact">
-  <div class="wrap">
-    <div class="section-label">Get In Touch</div>
-    <h2 class="section-title">Ready to start your project?</h2>
-    <div class="contact-grid">
-      <div class="contact-info">
-        <div class="contact-item"><h4>Phone</h4><p><a href="tel:6477680850">(647) 768-0850</a></p></div>
-        <div class="contact-item"><h4>Email</h4><p><a href="mailto:info@unodrywall.ca">info@unodrywall.ca</a></p></div>
-        <div class="contact-item"><h4>Address</h4><p>2121 Lakeshore Blvd W<br>Etobicoke, ON M8V 4E9</p></div>
-        <div class="contact-item"><h4>Hours</h4><p>Monday – Friday: 7:00 AM – 6:00 PM<br>Saturday: 8:00 AM – 2:00 PM</p></div>
+  <div class="w">
+    <span class="tag">Contact</span>
+    <h2 class="section-title" style="font-family:var(--heading);font-weight:700">Let's talk about your project.</h2>
+    <div class="contact-g">
+      <div class="c-info">
+        <div class="c-item"><h4>Phone</h4><p><a href="tel:6477680850">(647) 768-0850</a></p></div>
+        <div class="c-item"><h4>Email</h4><p><a href="mailto:info@unodrywall.ca">info@unodrywall.ca</a></p></div>
+        <div class="c-item"><h4>Office</h4><p>2121 Lakeshore Blvd W<br>Etobicoke, ON M8V 4E9</p></div>
+        <div class="c-item"><h4>Hours</h4><p>Mon–Fri: 7 AM – 6 PM<br>Sat: 8 AM – 2 PM</p></div>
       </div>
-      <div class="contact-map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2888.1!2d-79.4930!3d43.6060!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b35b0a0a0a0a0%3A0x0!2s2121+Lakeshore+Blvd+W%2C+Etobicoke%2C+ON+M8V+4E9!5e0!3m2!1sen!2sca!4v1709700000000!5m2!1sen!2sca" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <div class="c-map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2888.1!2d-79.4930!3d43.6060!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b35b0a0a0a0a0%3A0x0!2s2121+Lakeshore+Blvd+W%2C+Etobicoke%2C+ON+M8V+4E9!5e0!3m2!1sen!2sca!4v1709700000000!5m2!1sen!2sca" allowfullscreen loading="lazy"></iframe>
       </div>
     </div>
   </div>
 </section>
 
-<!-- CTA BANNER -->
-<div class="cta-banner">
-  <div class="wrap">
-    <div class="cta-inner">
-      <h2>There's no project too big or too small. Get in touch today.</h2>
-      <a href="tel:6477680850" class="btn-accent">Call (647) 768-0850</a>
-    </div>
-  </div>
-</div>
-
 <!-- FOOTER -->
 <footer>
-  <div class="wrap">
-    <div class="footer-inner">
-      <div class="footer-brand">
-        <img src="uno-logo.jpg" alt="Uno Drywall">
-        <p>Professional drywall installation, finishing & interior systems for the Greater Toronto Area.</p>
-      </div>
-      <div class="footer-col">
-        <h4>Services</h4>
-        <a href="#services">Drywall Installation</a>
-        <a href="#services">Taping & Finishing</a>
-        <a href="#services">Steel Framing</a>
-        <a href="#services">T-Bar Ceilings</a>
-        <a href="#services">Soundproofing</a>
-        <a href="#services">Repairs</a>
-      </div>
-      <div class="footer-col">
-        <h4>Company</h4>
-        <a href="#about">About Us</a>
-        <a href="#gallery">Our Work</a>
-        <a href="#testimonials">Reviews</a>
-        <a href="#faq">FAQ</a>
-        <a href="#contact">Contact</a>
-      </div>
-      <div class="footer-col">
-        <h4>Service Areas</h4>
-        <a href="#">Toronto</a>
-        <a href="#">Etobicoke</a>
-        <a href="#">Mississauga</a>
-        <a href="#">Brampton</a>
-        <a href="#">Vaughan</a>
-        <a href="#">Markham</a>
-      </div>
+  <div class="w">
+    <div class="ft-inner">
+      <div class="ft-brand"><img src="uno-logo.jpg" alt="Uno Drywall"><p>Professional drywall & interior systems for the GTA. Licensed, insured, and built on quality craftsmanship.</p></div>
+      <div class="ft-col"><h4>Services</h4><a href="#services">Drywall Installation</a><a href="#services">Taping & Finishing</a><a href="#services">Steel Framing</a><a href="#services">T-Bar Ceilings</a><a href="#services">Insulation</a><a href="#services">Repairs</a></div>
+      <div class="ft-col"><h4>Company</h4><a href="#about">About</a><a href="#gallery">Projects</a><a href="#reviews">Reviews</a><a href="#faq">FAQ</a><a href="#quote">Get a Quote</a><a href="#contact">Contact</a></div>
+      <div class="ft-col"><h4>Service Areas</h4><a href="#">Toronto</a><a href="#">Etobicoke</a><a href="#">Mississauga</a><a href="#">Brampton</a><a href="#">Vaughan</a><a href="#">Markham</a></div>
     </div>
-    <div class="footer-bottom">
+    <div class="ft-bot">
       <span>© 2026 Uno Drywall Ltd. All rights reserved.</span>
-      <span>2121 Lakeshore Blvd W, Etobicoke, ON &nbsp;·&nbsp; (647) 768-0850</span>
+      <span>Licensed & WSIB Insured · (647) 768-0850</span>
     </div>
   </div>
 </footer>
 
-<!-- STICKY MOBILE CTA -->
-<div class="mobile-cta">
-  <div class="mobile-cta-inner">
-    <a href="tel:6477680850" class="mcta-call">📞 Call Now</a>
-    <a href="#contact" class="mcta-quote">Free Estimate</a>
+<!-- MOBILE CTA -->
+<div class="mob-cta">
+  <div class="mob-cta-i">
+    <a href="tel:6477680850" class="mc-call">📞 Call Now</a>
+    <a href="#quote" class="mc-quote">Free Quote</a>
   </div>
 </div>
 
 <script>
-// FAQ accordion
-document.querySelectorAll('.faq-item').forEach(item => {
-  item.addEventListener('click', () => {
-    const a = item.querySelector('.faq-a');
-    if (item.classList.contains('open')) {
-      a.style.maxHeight = a.scrollHeight + 'px';
-    } else {
-      a.style.maxHeight = '0';
-    }
-  });
-});
+// Scroll reveal
+const obs=new IntersectionObserver((entries)=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');obs.unobserve(e.target)}})},{threshold:0.1,rootMargin:'0px 0px -40px 0px'});
+document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
+
+// Counter animation
+const countObs=new IntersectionObserver((entries)=>{entries.forEach(e=>{if(e.isIntersecting){const el=e.target;const target=parseInt(el.dataset.count);const duration=1500;const start=Date.now();const step=()=>{const progress=Math.min((Date.now()-start)/duration,1);const eased=1-Math.pow(1-progress,3);el.textContent=Math.floor(eased*target);if(progress<1)requestAnimationFrame(step)};step();countObs.unobserve(el)}})},{threshold:0.5});
+document.querySelectorAll('[data-count]').forEach(el=>countObs.observe(el));
 </script>
 
 </body>
