@@ -1,0 +1,7 @@
+*.jpg
+!uno-logo.jpg
+!uno-logo-white.png
+!hero-bg.jpg
+!about-img.jpg
+!gallery-*.jpg
+!cta-bg.jpg
