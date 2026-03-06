@@ -42,7 +42,7 @@ img{max-width:100%;display:block}
 /* ── NAV ─────────────────────── */
 nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(14,14,14,0.85);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-bottom:1px solid var(--border);transition:0.3s}
 .nav-i{max-width:var(--max-w);margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:16px 48px}
-.nav-logo img{height:28px;filter:brightness(0) invert(1)}
+.nav-logo img{height:36px}
 .nav-r{display:flex;align-items:center;gap:28px}
 .nav-links{display:flex;gap:28px;list-style:none}
 .nav-links a{text-decoration:none;color:var(--text-muted);font-size:13px;font-weight:500;transition:0.3s}
@@ -55,9 +55,9 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(14,14,14,0.8
 .ham span{display:block;width:20px;height:1.5px;background:#fff;margin:4px 0}
 
 /* ── HERO ─────────────────────── */
-.hero{min-height:100vh;display:grid;grid-template-columns:1fr 1fr;position:relative;overflow:hidden}
+.hero{min-height:100vh;display:grid;grid-template-columns:1.2fr 0.8fr;position:relative;overflow:hidden}
 .hero-left{display:flex;flex-direction:column;justify-content:center;padding:140px 0 80px 0;position:relative;z-index:2}
-.hero-left .w-left{max-width:600px;padding-left:max(48px, calc((100vw - var(--max-w))/2 + 48px))}
+.hero-left .w-left{max-width:660px;padding-left:max(48px, calc((100vw - var(--max-w))/2 + 48px));padding-right:40px}
 .hero-tag{display:inline-flex;align-items:center;gap:8px;background:var(--border);border:1px solid rgba(255,255,255,0.08);padding:6px 14px;border-radius:100px;font-size:11px;font-weight:600;color:var(--text-muted);letter-spacing:1px;text-transform:uppercase;margin-bottom:28px;width:fit-content}
 .hero-tag .dot{width:6px;height:6px;border-radius:50%;background:var(--accent);animation:pulse 2s infinite}
 @keyframes pulse{0%,100%{opacity:1}50%{opacity:0.4}}
@@ -220,7 +220,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(14,14,14,0.8
 /* ── FOOTER ───────────────────── */
 footer{background:var(--bg-sec);padding:56px 0 28px;border-top:1px solid var(--border)}
 .ft-inner{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:40px}
-.ft-brand img{height:24px;filter:brightness(0) invert(1);margin-bottom:14px}
+.ft-brand img{height:30px;filter:brightness(0) invert(1);margin-bottom:14px}
 .ft-brand p{font-size:13px;color:var(--text-muted);line-height:1.7;max-width:260px}
 .ft-col h4{font-size:10px;font-weight:700;color:var(--text);text-transform:uppercase;letter-spacing:2px;margin-bottom:16px}
 .ft-col a{display:block;color:var(--text-muted);text-decoration:none;font-size:13px;margin-bottom:10px;transition:0.3s}
@@ -287,7 +287,7 @@ footer{background:var(--bg-sec);padding:56px 0 28px;border-top:1px solid var(--b
 <!-- NAV -->
 <nav>
   <div class="nav-i">
-    <a href="#" class="nav-logo"><img src="uno-logo.jpg" alt="Uno Drywall"></a>
+    <a href="#" class="nav-logo"><img src="uno-logo.png" alt="Uno Drywall"></a>
     <div class="nav-r">
       <ul class="nav-links" id="navLinks">
         <li><a href="#about">About</a></li>
@@ -309,7 +309,7 @@ footer{background:var(--bg-sec);padding:56px 0 28px;border-top:1px solid var(--b
   <div class="hero-left">
     <div class="w-left">
       <div class="hero-tag"><span class="dot"></span> Serving the Greater Toronto Area</div>
-      <h1>We build the walls<br>your project stands on.</h1>
+      <h1>We build the walls your project stands on.</h1>
       <p class="hero-sub">Drywall installation, steel framing, taping & finishing for commercial and residential builds. Over 500 projects completed across the GTA.</p>
       <div class="hero-actions">
         <a href="#quote" class="btn-primary">Get Your Free Quote</a>
@@ -582,7 +582,7 @@ footer{background:var(--bg-sec);padding:56px 0 28px;border-top:1px solid var(--b
 <footer>
   <div class="w">
     <div class="ft-inner">
-      <div class="ft-brand"><img src="uno-logo.jpg" alt="Uno Drywall"><p>Professional drywall & interior systems for the GTA. Licensed, insured, and built on quality craftsmanship.</p></div>
+      <div class="ft-brand"><img src="uno-logo.png" alt="Uno Drywall"><p>Professional drywall & interior systems for the GTA. Licensed, insured, and built on quality craftsmanship.</p></div>
       <div class="ft-col"><h4>Services</h4><a href="#services">Drywall Installation</a><a href="#services">Taping & Finishing</a><a href="#services">Steel Framing</a><a href="#services">T-Bar Ceilings</a><a href="#services">Insulation</a><a href="#services">Repairs</a></div>
       <div class="ft-col"><h4>Company</h4><a href="#about">About</a><a href="#gallery">Projects</a><a href="#reviews">Reviews</a><a href="#faq">FAQ</a><a href="#quote">Get a Quote</a><a href="#contact">Contact</a></div>
       <div class="ft-col"><h4>Service Areas</h4><a href="#">Toronto</a><a href="#">Etobicoke</a><a href="#">Mississauga</a><a href="#">Brampton</a><a href="#">Vaughan</a><a href="#">Markham</a></div>
