@@ -36,11 +36,12 @@ img{max-width:100%;display:block}
 .w{max-width:var(--max-w);margin:0 auto;padding:0 48px}
 
 /* Animations */
-.reveal{opacity:1;transform:translateY(0);transition:opacity 0.8s var(--ease),transform 0.8s var(--ease)}
+.reveal{opacity:0;transform:translateY(32px);transition:opacity 0.8s var(--ease),transform 0.8s var(--ease)}
 .reveal.visible{opacity:1;transform:translateY(0)}
 
 /* ── NAV ─────────────────────── */
-nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(14,14,14,0.85);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-bottom:1px solid var(--border);transition:0.3s}
+nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(14,14,14,0.85);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-bottom:1px solid var(--border);transition:0.4s}
+nav.scrolled{background:rgba(14,14,14,0.97);box-shadow:0 4px 30px rgba(0,0,0,0.4)}
 .nav-i{max-width:var(--max-w);margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:16px 48px}
 .nav-logo img{height:38px}
 .nav-r{display:flex;align-items:center;gap:28px}
@@ -52,7 +53,13 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(14,14,14,0.8
 .nav-cta{background:var(--accent);color:#000;padding:10px 20px;font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;text-decoration:none;transition:0.3s}
 .nav-cta:hover{background:var(--accent-light)}
 .ham{display:none;background:none;border:none;cursor:pointer;padding:8px}
-.ham span{display:block;width:20px;height:1.5px;background:#fff;margin:4px 0}
+.ham span{display:block;width:20px;height:1.5px;background:#fff;margin:4px 0;transition:0.3s}
+.ham.active span:nth-child(1){transform:rotate(45deg) translate(4px,4px)}
+.ham.active span:nth-child(2){opacity:0}
+.ham.active span:nth-child(3){transform:rotate(-45deg) translate(4px,-4px)}
+
+/* Section Title */
+.section-title{font-family:var(--heading);font-size:clamp(1.6rem,2.5vw,2.2rem);color:#fff;font-weight:700;line-height:1.15}
 
 /* ── HERO ─────────────────────── */
 .hero{min-height:100vh;display:grid;grid-template-columns:65% 35%;position:relative;overflow:hidden}
@@ -111,7 +118,9 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(14,14,14,0.8
 .svc::after{content:'';position:absolute;bottom:0;left:0;width:0;height:2px;background:var(--accent);transition:0.4s var(--ease)}
 .svc:hover{background:var(--bg-card)}
 .svc:hover::after{width:100%}
-.svc-num{font-family:var(--heading);font-size:32px;font-weight:800;color:rgba(255,255,255,0.04);margin-bottom:16px;line-height:1}
+.svc-icon{width:40px;height:40px;margin-bottom:16px;color:var(--accent);opacity:0.9;transition:0.3s}
+.svc:hover .svc-icon{opacity:1;transform:translateY(-2px)}
+.svc-num{font-family:var(--heading);font-size:32px;font-weight:800;color:rgba(255,255,255,0.04);margin-bottom:4px;line-height:1;position:absolute;top:12px;right:16px}
 .svc h3{font-size:15px;font-weight:700;color:var(--text-bright);margin-bottom:8px}
 .svc p{font-size:13px;color:var(--text);line-height:1.7}
 
@@ -172,6 +181,9 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(14,14,14,0.8
 .rev-stars{color:#E8A020;font-size:14px;letter-spacing:4px;margin-bottom:20px}
 .rev-text{font-size:14.5px;color:#ddd;line-height:1.85;margin-bottom:28px}
 .rev-div{width:24px;height:1px;background:var(--border);margin-bottom:14px}
+.rev-author{display:flex;align-items:center;gap:12px}
+.rev-avatar{width:36px;height:36px;border-radius:50%;background:var(--accent);display:flex;align-items:center;justify-content:center;font-family:var(--heading);font-size:14px;font-weight:800;color:#000;flex-shrink:0}
+.rev-meta{}
 .rev-name{font-size:13px;font-weight:700;color:#fff}
 .rev-role{font-size:11px;color:#aaa;margin-top:3px}
 
@@ -234,6 +246,13 @@ footer{background:var(--bg-sec);padding:56px 0 28px;border-top:1px solid var(--b
 .mob-cta .mc-call{background:var(--accent);color:#000}
 .mob-cta .mc-quote{border:1px solid rgba(255,255,255,0.15);color:var(--text-bright)}
 
+/* Back to top */
+.btt{position:fixed;bottom:24px;right:24px;z-index:98;width:44px;height:44px;background:var(--accent);color:#000;border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;opacity:0;transform:translateY(16px);transition:0.4s var(--ease);pointer-events:none}
+.btt.visible{opacity:1;transform:translateY(0);pointer-events:auto}
+.btt:hover{background:var(--accent-light);transform:translateY(-2px)}
+.btt svg{width:18px;height:18px}
+@media(max-width:768px){.btt{bottom:80px}}
+
 /* ── RESPONSIVE ───────────────── */
 @media(max-width:1024px){
   .w,.nav-i{padding-left:32px;padding-right:32px}
@@ -255,7 +274,9 @@ footer{background:var(--bg-sec);padding:56px 0 28px;border-top:1px solid var(--b
   .w,.nav-i{padding-left:20px;padding-right:20px}
   .nav-links{display:none}
   .ham{display:block}
-  .nav-links.active{display:flex;flex-direction:column;position:absolute;top:100%;left:0;right:0;background:var(--bg-sec);padding:20px;gap:14px;border-bottom:1px solid var(--border)}
+  .nav-links{flex-direction:column;position:absolute;top:100%;left:0;right:0;background:var(--bg-sec);padding:0 20px;gap:0;border-bottom:1px solid var(--border);max-height:0;overflow:hidden;transition:max-height 0.4s ease,padding 0.4s ease;display:flex}
+  .nav-links a{padding:8px 0}
+  .nav-links.active{max-height:320px;padding:12px 20px}
   .hero-left .w-left{padding-left:20px}
   section,#about,#services,#process,#why,#gallery,#reviews,#quote,#faq,#contact{padding:80px 0}
   .about-g{grid-template-columns:1fr;gap:40px}
@@ -300,7 +321,7 @@ footer{background:var(--bg-sec);padding:56px 0 28px;border-top:1px solid var(--b
       <a href="tel:6477680850" class="nav-phone">(647) 768-0850</a>
       <a href="#quote" class="nav-cta">Free Quote</a>
     </div>
-    <button class="ham" onclick="document.getElementById('navLinks').classList.toggle('active')" aria-label="Menu"><span></span><span></span><span></span></button>
+    <button class="ham" id="hamBtn" onclick="this.classList.toggle('active');document.getElementById('navLinks').classList.toggle('active')" aria-label="Menu"><span></span><span></span><span></span></button>
   </div>
 </nav>
 
@@ -373,19 +394,19 @@ footer{background:var(--bg-sec);padding:56px 0 28px;border-top:1px solid var(--b
     <div class="svc-top reveal">
       <div>
         <span class="tag">Our Services</span>
-        <h2 class="section-title" style="font-family:var(--heading);font-weight:700">Everything between the studs and the paint.</h2>
+        <h2 class="section-title">Everything between the studs and the paint.</h2>
       </div>
       <p class="desc">We handle framing, boarding, taping, finishing, insulation, and ceiling systems — so you don't need three subs when one will do.</p>
     </div>
     <div class="svc-grid reveal">
-      <div class="svc"><div class="svc-num">01</div><h3>Drywall Installation</h3><p>Full board hanging for new builds, additions, and renovations. Clean lines, minimal waste, every time.</p></div>
-      <div class="svc"><div class="svc-num">02</div><h3>Taping & Finishing</h3><p>Level 3 through Level 5 finishes. Seamless joints, paint-ready surfaces, no callbacks.</p></div>
-      <div class="svc"><div class="svc-num">03</div><h3>Steel Stud Framing</h3><p>Light-gauge steel framing for walls, bulkheads, and soffits. Straight, square, plumb — guaranteed.</p></div>
-      <div class="svc"><div class="svc-num">04</div><h3>T-Bar & Drop Ceilings</h3><p>Suspended ceiling systems with acoustical tiles for offices, basements, and commercial spaces.</p></div>
-      <div class="svc"><div class="svc-num">05</div><h3>Insulation & Soundproofing</h3><p>Batt and blown-in insulation. Thermal and acoustic solutions for walls and ceilings.</p></div>
-      <div class="svc"><div class="svc-num">06</div><h3>Drywall Repairs</h3><p>Water damage, holes, cracks — patched and blended so you'd never know we were there.</p></div>
-      <div class="svc"><div class="svc-num">07</div><h3>Texture & Skim Coats</h3><p>Knockdown, orange peel, smooth skim, and custom textures matched to any spec.</p></div>
-      <div class="svc"><div class="svc-num">08</div><h3>Turnkey Interior Packages</h3><p>Frame-to-finish interior builds. One crew, one point of contact, delivered complete.</p></div>
+      <div class="svc"><svg class="svc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="1"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="3" x2="9" y2="21"/></svg><div class="svc-num">01</div><h3>Drywall Installation</h3><p>Full board hanging for new builds, additions, and renovations. Clean lines, minimal waste, every time.</p></div>
+      <div class="svc"><svg class="svc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 19V5M5 12l7-7 7 7"/></svg><div class="svc-num">02</div><h3>Taping & Finishing</h3><p>Level 3 through Level 5 finishes. Seamless joints, paint-ready surfaces, no callbacks.</p></div>
+      <div class="svc"><svg class="svc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="4" y="2" width="16" height="20" rx="1"/><line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="17" x2="20" y2="17"/></svg><div class="svc-num">03</div><h3>Steel Stud Framing</h3><p>Light-gauge steel framing for walls, bulkheads, and soffits. Straight, square, plumb — guaranteed.</p></div>
+      <div class="svc"><svg class="svc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 6h20M4 6v0M8 6v0M12 6v0M16 6v0M20 6v0"/><rect x="3" y="6" width="18" height="2" rx="0.5"/><line x1="6" y1="8" x2="6" y2="18"/><line x1="12" y1="8" x2="12" y2="18"/><line x1="18" y1="8" x2="18" y2="18"/></svg><div class="svc-num">04</div><h3>T-Bar & Drop Ceilings</h3><p>Suspended ceiling systems with acoustical tiles for offices, basements, and commercial spaces.</p></div>
+      <div class="svc"><svg class="svc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 21V8l9-5 9 5v13"/><path d="M9 21v-6h6v6"/><line x1="3" y1="10" x2="21" y2="10"/></svg><div class="svc-num">05</div><h3>Insulation & Soundproofing</h3><p>Batt and blown-in insulation. Thermal and acoustic solutions for walls and ceilings.</p></div>
+      <div class="svc"><svg class="svc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg><div class="svc-num">06</div><h3>Drywall Repairs</h3><p>Water damage, holes, cracks — patched and blended so you'd never know we were there.</p></div>
+      <div class="svc"><svg class="svc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><path d="M12 3c2 4 2 8 0 12s-2 8 0 12" opacity="0.4"/><path d="M8 7c3 2 5 6 4 10" opacity="0.4"/></svg><div class="svc-num">07</div><h3>Texture & Skim Coats</h3><p>Knockdown, orange peel, smooth skim, and custom textures matched to any spec.</p></div>
+      <div class="svc"><svg class="svc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 20h20"/><rect x="4" y="8" width="16" height="12" rx="1"/><path d="M8 8V5a4 4 0 018 0v3"/></svg><div class="svc-num">08</div><h3>Turnkey Interior Packages</h3><p>Frame-to-finish interior builds. One crew, one point of contact, delivered complete.</p></div>
     </div>
   </div>
 </section>
@@ -404,7 +425,7 @@ footer{background:var(--bg-sec);padding:56px 0 28px;border-top:1px solid var(--b
   <div class="w">
     <div class="proc-header reveal">
       <span class="tag" style="display:block;text-align:center">How It Works</span>
-      <h2 class="section-title" style="font-family:var(--heading);font-weight:700;text-align:center">Four steps. No surprises.</h2>
+      <h2 class="section-title" style="text-align:center">Four steps. No surprises.</h2>
     </div>
     <div class="proc-grid reveal">
       <div class="proc"><div class="proc-n">1</div><h3>Call or Request</h3><p>Reach out by phone or form. We'll schedule a free site visit within 48 hours.</p></div>
@@ -421,7 +442,7 @@ footer{background:var(--bg-sec);padding:56px 0 28px;border-top:1px solid var(--b
     <div class="why-g">
       <div class="reveal">
         <span class="tag">Why Uno Drywall</span>
-        <h2 class="section-title" style="font-family:var(--heading);font-weight:700;margin-bottom:32px">The difference is in the details.</h2>
+        <h2 class="section-title" style="margin-bottom:32px">The difference is in the details.</h2>
         <div class="why-list">
           <div class="why-item"><div class="why-n">01</div><div><h3>We Show Up On Time</h3><p>Every day, every project. We coordinate with your trades and never hold up the schedule. That's not a promise — it's policy.</p></div></div>
           <div class="why-item"><div class="why-n">02</div><div><h3>Clean Sites, Always</h3><p>Daily dust containment and cleanup on every job. Your site stays organized because our reputation depends on it.</p></div></div>
@@ -441,7 +462,7 @@ footer{background:var(--bg-sec);padding:56px 0 28px;border-top:1px solid var(--b
 <section id="gallery">
   <div class="w">
     <span class="tag">Our Work</span>
-    <h2 class="section-title" style="font-family:var(--heading);font-weight:700">Recent projects across the GTA.</h2>
+    <h2 class="section-title">Recent projects across the GTA.</h2>
     <div class="gal-grid reveal">
       <div class="gal-item"><img src="gallery-1.jpg" alt="Commercial project" loading="lazy"><div class="gal-ov"><div class="gal-line"></div><span>Commercial Build</span><small>Toronto, ON</small></div></div>
       <div class="gal-item"><img src="gallery-2.jpg" alt="Residential finish" loading="lazy"><div class="gal-ov"><div class="gal-line"></div><span>Residential Interior</span><small>Etobicoke, ON</small></div></div>
@@ -457,28 +478,25 @@ footer{background:var(--bg-sec);padding:56px 0 28px;border-top:1px solid var(--b
 <section id="reviews">
   <div class="w">
     <span class="tag">What Clients Say</span>
-    <h2 class="section-title" style="font-family:var(--heading);font-weight:700">We let our work speak. But our clients do too.</h2>
+    <h2 class="section-title">We let our work speak. But our clients do too.</h2>
     <div class="rev-grid reveal">
       <div class="rev">
         <div class="rev-stars">★ ★ ★ ★ ★</div>
         <p class="rev-text">"Uno Drywall handled our entire basement — framing, boarding, taping. The finish was flawless. You can't see a single seam. They showed up every morning at 7 and left the site cleaner than they found it."</p>
         <div class="rev-div"></div>
-        <div class="rev-name">Marco R.</div>
-        <div class="rev-role">Homeowner — Etobicoke</div>
+        <div class="rev-author"><div class="rev-avatar">M</div><div class="rev-meta"><div class="rev-name">Marco R.</div><div class="rev-role">Homeowner — Etobicoke</div></div></div>
       </div>
       <div class="rev">
         <div class="rev-stars">★ ★ ★ ★ ★</div>
         <p class="rev-text">"We've subbed Uno on three commercial builds now. Framing is dead straight, boarding is tight, and they coordinate with other trades without being asked. They're our go-to and it's not close."</p>
         <div class="rev-div"></div>
-        <div class="rev-name">Sarah K.</div>
-        <div class="rev-role">Project Manager — Mississauga</div>
+        <div class="rev-author"><div class="rev-avatar">S</div><div class="rev-meta"><div class="rev-name">Sarah K.</div><div class="rev-role">Project Manager — Mississauga</div></div></div>
       </div>
       <div class="rev">
         <div class="rev-stars">★ ★ ★ ★ ★</div>
         <p class="rev-text">"Had bad water damage in the living room ceiling. Antonio came out the next day, quoted it fair, and his crew made it look like nothing ever happened. Would hire again in a heartbeat."</p>
         <div class="rev-div"></div>
-        <div class="rev-name">James T.</div>
-        <div class="rev-role">Homeowner — Brampton</div>
+        <div class="rev-author"><div class="rev-avatar">J</div><div class="rev-meta"><div class="rev-name">James T.</div><div class="rev-role">Homeowner — Brampton</div></div></div>
       </div>
     </div>
   </div>
@@ -521,7 +539,7 @@ footer{background:var(--bg-sec);padding:56px 0 28px;border-top:1px solid var(--b
 <section id="faq">
   <div class="w">
     <span class="tag">FAQ</span>
-    <h2 class="section-title" style="font-family:var(--heading);font-weight:700">Questions we get asked a lot.</h2>
+    <h2 class="section-title">Questions we get asked a lot.</h2>
     <div class="faq-g">
       <div class="faq-i" onclick="this.classList.toggle('open');var a=this.querySelector('.faq-a');a.style.maxHeight=this.classList.contains('open')?a.scrollHeight+'px':'0'">
         <div class="faq-q"><h3>How much does drywall cost per square foot in Toronto?</h3><div class="faq-tog">+</div></div>
@@ -563,7 +581,7 @@ footer{background:var(--bg-sec);padding:56px 0 28px;border-top:1px solid var(--b
 <section id="contact">
   <div class="w">
     <span class="tag">Contact</span>
-    <h2 class="section-title" style="font-family:var(--heading);font-weight:700">Let's talk about your project.</h2>
+    <h2 class="section-title">Let's talk about your project.</h2>
     <div class="contact-g">
       <div class="c-info">
         <div class="c-item"><h4>Phone</h4><p><a href="tel:6477680850">(647) 768-0850</a></p></div>
@@ -594,6 +612,9 @@ footer{background:var(--bg-sec);padding:56px 0 28px;border-top:1px solid var(--b
   </div>
 </footer>
 
+<!-- BACK TO TOP -->
+<button class="btt" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg></button>
+
 <!-- MOBILE CTA -->
 <div class="mob-cta">
   <div class="mob-cta-i">
@@ -606,6 +627,20 @@ footer{background:var(--bg-sec);padding:56px 0 28px;border-top:1px solid var(--b
 // Scroll reveal
 const obs=new IntersectionObserver((entries)=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');obs.unobserve(e.target)}})},{threshold:0.1,rootMargin:'0px 0px -40px 0px'});
 document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
+
+// Nav scroll effect + back to top
+const navEl=document.querySelector('nav');
+const btt=document.querySelector('.btt');
+window.addEventListener('scroll',()=>{
+  navEl.classList.toggle('scrolled',window.scrollY>80);
+  btt.classList.toggle('visible',window.scrollY>600);
+},{passive:true});
+
+// Close mobile menu on link click
+document.querySelectorAll('.nav-links a').forEach(a=>a.addEventListener('click',()=>{
+  document.getElementById('navLinks').classList.remove('active');
+  document.getElementById('hamBtn').classList.remove('active');
+}));
 
 // Counter animation
 const countObs=new IntersectionObserver((entries)=>{entries.forEach(e=>{if(e.isIntersecting){const el=e.target;const target=parseInt(el.dataset.count);const duration=1500;const start=Date.now();const step=()=>{const progress=Math.min((Date.now()-start)/duration,1);const eased=1-Math.pow(1-progress,3);el.textContent=Math.floor(eased*target);if(progress<1)requestAnimationFrame(step)};step();countObs.unobserve(el)}})},{threshold:0.5});
