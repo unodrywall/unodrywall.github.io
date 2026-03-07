@@ -542,7 +542,7 @@ footer{background:var(--bg-sec);padding:56px 0 28px;border-top:1px solid var(--b
         b.textContent='SENDING...';b.disabled=true;
         fetch(f.action,{method:'POST',body:new FormData(f),headers:{'Accept':'application/json'}})
         .then(function(r){
-          if(r.ok){b.textContent='SENT — WE\'LL CALL YOU';b.style.background='#2a7d2a';f.reset();}
+          if(r.ok){b.textContent="SENT — WE'LL CALL YOU";b.style.background='#2a7d2a';f.reset();}
           else{b.textContent='ERROR — TRY AGAIN';b.style.background='#c0392b';b.disabled=false;}
         })
         .catch(function(){b.textContent='ERROR — TRY AGAIN';b.style.background='#c0392b';b.disabled=false;});
