@@ -513,13 +513,17 @@ footer{background:var(--bg-sec);padding:56px 0 28px;border-top:1px solid var(--b
         <p>Fill out the form and we'll get back to you within 24 hours with a detailed quote. Or call us directly:</p>
         <a href="tel:6477680850" class="quote-phone">(647) 768-0850</a>
       </div>
-      <form class="quote-form" onsubmit="event.preventDefault();this.querySelector('.quote-submit').textContent='SENT — WE\'LL CALL YOU';this.querySelector('.quote-submit').style.background='#2a7d2a'">
+      <form class="quote-form" action="https://formsubmit.co/info@unodrywall.ca" method="POST" id="quoteForm">
+        <input type="hidden" name="_subject" value="New Quote Request — UnoDrywall.ca">
+        <input type="hidden" name="_next" value="https://unodrywall.ca/#quote">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="text" name="_honey" style="display:none">
         <div class="row">
-          <input type="text" placeholder="Your Name" required>
-          <input type="tel" placeholder="Phone Number" required>
+          <input type="text" name="name" placeholder="Your Name" required>
+          <input type="tel" name="phone" placeholder="Phone Number" required>
         </div>
-        <input type="email" placeholder="Email Address">
-        <select>
+        <input type="email" name="email" placeholder="Email Address">
+        <select name="project_type">
           <option value="" disabled selected>Project Type</option>
           <option>New Construction</option>
           <option>Renovation</option>
@@ -528,9 +532,22 @@ footer{background:var(--bg-sec);padding:56px 0 28px;border-top:1px solid var(--b
           <option>Repair / Patch</option>
           <option>Other</option>
         </select>
-        <textarea placeholder="Tell us about your project (optional)" rows="3"></textarea>
-        <button type="submit" class="quote-submit">Send Request</button>
+        <textarea name="message" placeholder="Tell us about your project (optional)" rows="3"></textarea>
+        <button type="submit" class="quote-submit" id="quoteBtn">Send Request</button>
       </form>
+      <script>
+      document.getElementById('quoteForm').addEventListener('submit',function(e){
+        e.preventDefault();
+        var f=this,b=document.getElementById('quoteBtn');
+        b.textContent='SENDING...';b.disabled=true;
+        fetch(f.action,{method:'POST',body:new FormData(f),headers:{'Accept':'application/json'}})
+        .then(function(r){
+          if(r.ok){b.textContent='SENT — WE\'LL CALL YOU';b.style.background='#2a7d2a';f.reset();}
+          else{b.textContent='ERROR — TRY AGAIN';b.style.background='#c0392b';b.disabled=false;}
+        })
+        .catch(function(){b.textContent='ERROR — TRY AGAIN';b.style.background='#c0392b';b.disabled=false;});
+      });
+      </script>
     </div>
   </div>
 </section>
